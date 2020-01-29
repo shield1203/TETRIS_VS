@@ -3,15 +3,15 @@
 class SystemFrame
 {
 protected:
-	unsigned int m_consolWidth = 0;
-	unsigned int m_consolHigh = 0;
+	COORD m_consoleSize;
+	string m_sizeCommend;
 public:
 	virtual void Init() {};
-	virtual void LoadData() {};
 	virtual void Update() {};
 	virtual void Render() {};
+
+	void GetConsoleSize(COORD&);
 
 	SystemFrame();
 	~SystemFrame();
 };
-

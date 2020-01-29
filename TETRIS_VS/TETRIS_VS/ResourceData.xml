@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<Resource>
+  <MenuSystem  Background="1" Sprite="10">
+    <BackgroundData Lines="27" Cols="52" Size="mode con lines=27 cols=52">
+      <TextInfo xPos="0" yPos="0" color="3">□□□□□□□□□□□□□□□□□□□□□□□□□□</TextInfo>
+      <TextInfo xPos="0" yPos="1" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="1" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="2" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="2" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="3" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="3" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="4" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="4" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="5" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="5" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="6" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="6" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="7" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="7" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="8" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="8" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="9" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="9" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="10" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="10" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="11" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="11" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="12" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="12" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="13" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="13" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="14" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="14" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="15" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="15" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="16" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="16" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="17" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="17" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="18" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="18" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="19" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="19" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="20" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="20" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="21" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="21" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="22" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="22" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="23" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="23" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="24" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="24" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="25" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="25" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="26" color="3">□□□□□□□□□□□□□□□□□□□□□□□□□□</TextInfo>
+    </BackgroundData>
+    <SpriteData num="0">
+      <TextInfo xPos="2" yPos="2" color="1">■■■</TextInfo>
+      <TextInfo xPos="4" yPos="3" color="1">■</TextInfo>
+      <TextInfo xPos="4" yPos="4" color="1">■</TextInfo>
+      <TextInfo xPos="4" yPos="5" color="1">■</TextInfo>
+      <TextInfo xPos="4" yPos="6" color="1">■</TextInfo>
+    </SpriteData>
+    <SpriteData num="1">
+      <TextInfo xPos="10" yPos="2" color="4">■■■■</TextInfo>
+      <TextInfo xPos="10" yPos="3" color="4">■</TextInfo>
+      <TextInfo xPos="10" yPos="4" color="4">■■■</TextInfo>
+      <TextInfo xPos="10" yPos="5" color="4">■</TextInfo>
+      <TextInfo xPos="10" yPos="6" color="4">■■■■</TextInfo>
+    </SpriteData>
+    <SpriteData num="2">
+      <TextInfo xPos="20" yPos="2" color="6">■■■</TextInfo>
+      <TextInfo xPos="22" yPos="3" color="6">■</TextInfo>
+      <TextInfo xPos="22" yPos="4" color="6">■</TextInfo>
+      <TextInfo xPos="22" yPos="5" color="6">■</TextInfo>
+      <TextInfo xPos="22" yPos="6" color="6">■</TextInfo>
+    </SpriteData>
+    <SpriteData num="3">
+      <TextInfo xPos="28" yPos="2" color="3">■■■</TextInfo>
+      <TextInfo xPos="28" yPos="3" color="3">■</TextInfo>
+      <TextInfo xPos="34" yPos="3" color="3">■</TextInfo>
+      <TextInfo xPos="28" yPos="4" color="3">■■■</TextInfo>
+      <TextInfo xPos="28" yPos="5" color="3">■</TextInfo>
+      <TextInfo xPos="34" yPos="5" color="3">■</TextInfo>
+      <TextInfo xPos="28" yPos="6" color="3">■</TextInfo>
+      <TextInfo xPos="34" yPos="6" color="3">■</TextInfo>
+    </SpriteData>
+    <SpriteData num="4">
+      <TextInfo xPos="38" yPos="2" color="2">■</TextInfo>
+      <TextInfo xPos="38" yPos="3" color="2">■</TextInfo>
+      <TextInfo xPos="38" yPos="4" color="2">■</TextInfo>
+      <TextInfo xPos="38" yPos="5" color="2">■</TextInfo>
+      <TextInfo xPos="38" yPos="6" color="2">■</TextInfo>
+    </SpriteData>
+    <SpriteData num="5">
+      <TextInfo xPos="42" yPos="2" color="5">■■■■</TextInfo>
+      <TextInfo xPos="42" yPos="3" color="5">■</TextInfo>
+      <TextInfo xPos="42" yPos="4" color="5">■■■■</TextInfo>
+      <TextInfo xPos="48" yPos="5" color="5">      ■</TextInfo>
+      <TextInfo xPos="42" yPos="6" color="5">■■■■</TextInfo>
+    </SpriteData>
+    <SpriteData num="6">
+      <TextInfo xPos="18" yPos="11" color="3">▶</TextInfo>
+      <TextInfo xPos="33" yPos="11" color="3">◀</TextInfo>
+    </SpriteData>
+    <SpriteData num="7">
+      <TextInfo xPos="21" yPos="11" color="13">Single Play</TextInfo>
+    </SpriteData>
+    <SpriteData num="8">
+      <TextInfo xPos="21" yPos="14" color="13">Versus Play</TextInfo>
+    </SpriteData>
+    <SpriteData num="9">
+      <TextInfo xPos="24" yPos="17" color="13">EXIT</TextInfo>
+    </SpriteData>
+  </MenuSystem>
+</Resource>

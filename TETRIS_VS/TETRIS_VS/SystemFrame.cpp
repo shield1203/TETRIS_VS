@@ -11,3 +11,7 @@ SystemFrame::~SystemFrame()
 
 }
 
+void SystemFrame::GetConsoleSize(COORD& size)
+{
+	size = m_consoleSize;
+}

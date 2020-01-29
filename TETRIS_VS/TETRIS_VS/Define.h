@@ -13,18 +13,13 @@ extern short g_bufferIndex;
 //////////////
 #include<Vfw.h>
 #include<string>
+#include<cstring>
 #include<vector>
 #include<list>
 #include<ctime>
 #include<cstdlib>
 
 using namespace std;
-
-////////////
-// Define //
-////////////
-//#include"DefineEnum.h"
-//#include"DefineAPI.h"
 
 ///////////////
 //   SOUND   //

@@ -31,11 +31,29 @@
     <Filter Include="03.Systems\01.MenuSystem">
       <UniqueIdentifier>{4be880a5-9503-4e59-924e-b5c2cab8210e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="04.Managers">
+      <UniqueIdentifier>{cb467f38-95c0-4b4f-8df4-7f1ae1ccfccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Managers\00.SoundManager">
+      <UniqueIdentifier>{3202ce5f-e2f1-41eb-ad3c-f244007f2ab1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Managers\01.ResourceManager">
+      <UniqueIdentifier>{f66814a0-e397-40cb-bfda-1bf4c7ca8200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\XMLparser">
+      <UniqueIdentifier>{3de789f7-314e-4caf-8c7e-d11ae493fe46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\01.MenuSystem\01.Title">
+      <UniqueIdentifier>{a0a78968-730d-4118-8e44-3316c5107841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\01.MenuSystem\02.Selector">
+      <UniqueIdentifier>{86c312fb-4d0f-4187-8072-fbd7036f6d04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\01.MenuSystem\03.Mode">
+      <UniqueIdentifier>{3070059a-0803-459c-a7e8-0da72e3f6305}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Define.h">
       <Filter>00.Define</Filter>
     </ClInclude>
@@ -54,6 +72,24 @@
     <ClInclude Include="MenuSystem.h">
       <Filter>03.Systems\01.MenuSystem</Filter>
     </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>04.Managers\01.ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>04.Managers\00.SoundManager</Filter>
+    </ClInclude>
+    <ClInclude Include="tinystr.h">
+      <Filter>헤더 파일\XMLparser</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml.h">
+      <Filter>헤더 파일\XMLparser</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Title.h">
+      <Filter>03.Systems\01.MenuSystem\01.Title</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameStart.cpp">
@@ -67,6 +103,27 @@
     </ClCompile>
     <ClCompile Include="MenuSystem.cpp">
       <Filter>03.Systems\01.MenuSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>04.Managers\01.ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>04.Managers\00.SoundManager</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlparser.cpp">
+      <Filter>헤더 파일\XMLparser</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlerror.cpp">
+      <Filter>헤더 파일\XMLparser</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml.cpp">
+      <Filter>헤더 파일\XMLparser</Filter>
+    </ClCompile>
+    <ClCompile Include="tinystr.cpp">
+      <Filter>헤더 파일\XMLparser</Filter>
+    </ClCompile>
+    <ClCompile Include="Title.cpp">
+      <Filter>03.Systems\01.MenuSystem\01.Title</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
