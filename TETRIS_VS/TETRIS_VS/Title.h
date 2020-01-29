@@ -1,7 +1,7 @@
 #pragma once
 class ResourceManager;
 
-enum SETTING : unsigned int { CHANGE_COLOR_TIME = 120 };
+enum TitleEnum : unsigned int { CHANGE_COLOR_TIME = 120 };
 
 class Title
 {

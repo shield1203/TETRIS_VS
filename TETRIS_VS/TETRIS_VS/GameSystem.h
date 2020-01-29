@@ -6,7 +6,7 @@ class ResourceManager;
 class GameSystem
 {
 private:
-	GAME_STEP m_curGameStep, m_prevGameStep;
+	GAME_STEP m_curGameStep;
 
 	SystemFrame* m_systemFrame = nullptr;
 	ResourceManager* m_resourceManager = nullptr;

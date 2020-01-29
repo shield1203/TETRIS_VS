@@ -26,21 +26,27 @@ private:
 	static ResourceManager* Inst;
 	ResourceManager();
 public:
+	GAME_STEP m_curGameStep;
+
+	Background m_background;
+
 	// Menu
-	Background m_menuBackground;
 	vector<Sprite*> m_menuSprite;
 
 	// SinglePlay
+	vector<Sprite*> m_block;
+	vector<Sprite*> m_map;
+
 public:
 	static ResourceManager* getInstance();
 
-	void LoadGameData();
+	void LoadGameData(GAME_STEP);
 	
 	void LoadMenuData();
 	void LoadSinglePlayData();
 	void LoadSingleResultData();
 
-	void ReleaseData();
+	void ReleaseData(GAME_STEP);
 
 	~ResourceManager();
 };

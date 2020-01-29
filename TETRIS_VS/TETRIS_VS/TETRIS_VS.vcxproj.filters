@@ -49,8 +49,17 @@
     <Filter Include="03.Systems\01.MenuSystem\02.Selector">
       <UniqueIdentifier>{86c312fb-4d0f-4187-8072-fbd7036f6d04}</UniqueIdentifier>
     </Filter>
-    <Filter Include="03.Systems\01.MenuSystem\03.Mode">
+    <Filter Include="03.Systems\02.SinglePlaySystem">
+      <UniqueIdentifier>{a9bdd191-4d99-4660-be76-f7d40a193f10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\01.MenuSystem\03.MenuList">
       <UniqueIdentifier>{3070059a-0803-459c-a7e8-0da72e3f6305}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\02.SinglePlaySystem\00.Map">
+      <UniqueIdentifier>{f2836811-b41e-44b2-a815-bb4be185814e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\02.SinglePlaySystem\01.Block">
+      <UniqueIdentifier>{ea1a5fa6-3c84-4aa9-9481-90cadc747e63}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -90,6 +99,21 @@
     <ClInclude Include="Title.h">
       <Filter>03.Systems\01.MenuSystem\01.Title</Filter>
     </ClInclude>
+    <ClInclude Include="Selector.h">
+      <Filter>03.Systems\01.MenuSystem\02.Selector</Filter>
+    </ClInclude>
+    <ClInclude Include="SinglePlaySystem.h">
+      <Filter>03.Systems\02.SinglePlaySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuList.h">
+      <Filter>03.Systems\01.MenuSystem\03.MenuList</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>03.Systems\02.SinglePlaySystem\01.Block</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>03.Systems\02.SinglePlaySystem\00.Map</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameStart.cpp">
@@ -124,6 +148,21 @@
     </ClCompile>
     <ClCompile Include="Title.cpp">
       <Filter>03.Systems\01.MenuSystem\01.Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Selector.cpp">
+      <Filter>03.Systems\01.MenuSystem\02.Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="SinglePlaySystem.cpp">
+      <Filter>03.Systems\02.SinglePlaySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuList.cpp">
+      <Filter>03.Systems\01.MenuSystem\03.MenuList</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>03.Systems\02.SinglePlaySystem\01.Block</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>03.Systems\02.SinglePlaySystem\00.Map</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

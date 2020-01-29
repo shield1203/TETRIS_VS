@@ -13,6 +13,7 @@ extern short g_bufferIndex;
 //////////////
 #include<Vfw.h>
 #include<string>
+#include<conio.h>
 #include<cstring>
 #include<vector>
 #include<list>

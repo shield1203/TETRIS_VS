@@ -33,14 +33,13 @@ static void CreateBuffer(COORD size)
 		CloseHandle(g_screenBuffer[0]);
 		g_screenBuffer[0] = nullptr;
 	}
+	g_screenBuffer[0] = CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE, 0, NULL, CONSOLE_TEXTMODE_BUFFER, NULL);
 
 	if (g_screenBuffer[1] != nullptr)
 	{
 		CloseHandle(g_screenBuffer[1]);
 		g_screenBuffer[1] = nullptr;
-	}
-
-	g_screenBuffer[0] = CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE, 0, NULL, CONSOLE_TEXTMODE_BUFFER, NULL);
+	}	
 	g_screenBuffer[1] = CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE, 0, NULL, CONSOLE_TEXTMODE_BUFFER, NULL);
 }
 
@@ -57,6 +56,11 @@ static void FlippingBuffer()
 {
 	SetConsoleActiveScreenBuffer(g_screenBuffer[g_bufferIndex]);
 	g_bufferIndex = !g_bufferIndex;
+}
+
+static void FlippingSTDBuffer()
+{
+	SetConsoleActiveScreenBuffer(GetStdHandle(STD_OUTPUT_HANDLE));
 }
 
 static void ClearBuffer(COORD size)

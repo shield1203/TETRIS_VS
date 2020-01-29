@@ -3,15 +3,17 @@
 #include "GameSystem.h"
 
 #include "MenuSystem.h"
+#include "SinglePlaySystem.h"
 #include "ResourceManager.h"
 
 
 GameSystem::GameSystem()
 {
-	m_curGameStep = m_prevGameStep = STEP_MENU;
+	m_curGameStep = STEP_MENU;
 
 	m_systemFrame = new MenuSystem();
 	m_systemFrame->Init();
+
 	m_resourceManager = ResourceManager::getInstance();
 }
 
@@ -23,7 +25,7 @@ GameSystem::~GameSystem()
 
 void GameSystem::Process()
 {
-	while (m_curGameStep != STEP_EXIT)
+	while (m_resourceManager->m_curGameStep != STEP_EXIT)
 	{
 		Init();
 		Update();
@@ -33,9 +35,12 @@ void GameSystem::Process()
 
 void GameSystem::Init()
 {
-	if (m_curGameStep != m_prevGameStep)
+	if (m_curGameStep != m_resourceManager->m_curGameStep)
 	{
+		m_systemFrame->Release();
 		SafeDelete(m_systemFrame);
+
+		m_curGameStep = m_resourceManager->m_curGameStep;
 
 		switch (m_curGameStep)
 		{
@@ -43,15 +48,13 @@ void GameSystem::Init()
 			m_systemFrame = new MenuSystem();
 			break;
 		case STEP_SINGLE_PLAY:
-			//m_systemFrame = new SoloPlaySystem();
+			m_systemFrame = new SinglePlaySystem();
 			break;
 		case STEP_SINGLE_RESULT:
 			break;
 		}
 
 		m_systemFrame->Init();
-
-		m_prevGameStep = m_curGameStep;
 	}
 }
 
