@@ -16,6 +16,7 @@ ResourceManager* ResourceManager::getInstance()
 ResourceManager::ResourceManager()
 {
 	m_curGameStep = STEP_MENU;
+	m_block.blocks.resize(4);
 }
 
 ResourceManager::~ResourceManager()
@@ -25,22 +26,24 @@ ResourceManager::~ResourceManager()
 
 void ResourceManager::LoadGameData(GAME_STEP curGameStep)
 {
-	switch (curGameStep)
-	{
-	case STEP_MENU:
-		LoadMenuData();
-		break;
-	case STEP_SINGLE_PLAY:
-		LoadSinglePlayData();
-		break;
-	case STEP_SINGLE_RESULT:
-		LoadSingleResultData();
-		break;
-	}
+	LoadBackgroundData(curGameStep);
+	LoadSpriteData(curGameStep);
 }
 
-void ResourceManager::LoadMenuData()
+void ResourceManager::LoadBackgroundData(GAME_STEP gameStep)
 {
+	string strElemnt;
+
+	switch (gameStep)
+	{
+	case STEP_MENU:
+		strElemnt = "MenuSystem";
+		break;
+	case STEP_SINGLE_PLAY:
+		strElemnt = "SinglePlaySystem";
+		break;
+	}
+
 	TiXmlDocument doc;
 	doc.LoadFile("ResourceData.xml");
 
@@ -51,9 +54,7 @@ void ResourceManager::LoadMenuData()
 	TiXmlElement* pSubElem = nullptr;
 	TiXmlAttribute* pAttrib = nullptr;
 
-	// Menu /////////////////////////////////////////////////////////
-
-	pElem = pRoot->FirstChildElement("MenuSystem")->FirstChildElement("BackgroundData");
+	pElem = pRoot->FirstChildElement(strElemnt.c_str())->FirstChildElement("BackgroundData");
 	pAttrib = pElem->FirstAttribute();
 
 	m_background.consoleSize.X = pAttrib->IntValue();
@@ -70,7 +71,7 @@ void ResourceManager::LoadMenuData()
 		pAttrib = pSubElem->FirstAttribute();
 
 		TextInfo* addInfo = new TextInfo();
-		
+
 		addInfo->xPos = pAttrib->IntValue();
 		pAttrib = pAttrib->Next();
 
@@ -85,8 +86,35 @@ void ResourceManager::LoadMenuData()
 
 		pSubElem = pSubElem->NextSiblingElement();
 	}
+}
 
-	pElem = pRoot->FirstChildElement("MenuSystem")->FirstChildElement("SpriteData");
+void ResourceManager::LoadSpriteData(GAME_STEP gameStep)
+{
+	string strElemnt;
+
+	switch (gameStep)
+	{
+	case STEP_MENU:
+		strElemnt = "MenuSystem";
+		break;
+	case STEP_SINGLE_PLAY:
+		InitMap();
+		return;
+		//strElemnt = "SinglePlaySystem";
+		break;
+	}
+
+	TiXmlDocument doc;
+	doc.LoadFile("ResourceData.xml");
+
+	TiXmlElement* pRoot = doc.FirstChildElement("Resource");
+	if (!pRoot) return;
+
+	TiXmlElement* pElem = nullptr;
+	TiXmlElement* pSubElem = nullptr;
+	TiXmlAttribute* pAttrib = nullptr;
+
+	pElem = pRoot->FirstChildElement(strElemnt.c_str())->FirstChildElement("SpriteData");
 	while (pElem != nullptr)
 	{
 		pSubElem = pElem->FirstChildElement("TextInfo");
@@ -121,57 +149,19 @@ void ResourceManager::LoadMenuData()
 	}
 }
 
-void ResourceManager::LoadSinglePlayData()
+void ResourceManager::InitMap()
 {
-	TiXmlDocument doc;
-	doc.LoadFile("ResourceData.xml");
-
-	TiXmlElement* pRoot = doc.FirstChildElement("Resource");
-	if (!pRoot) return;
-
-	TiXmlElement* pElem = nullptr;
-	TiXmlElement* pSubElem = nullptr;
-	TiXmlAttribute* pAttrib = nullptr;
-
-	// SinglePlay /////////////////////////////////////////////////////////
-
-	pElem = pRoot->FirstChildElement("SinglePlaySystem")->FirstChildElement("BackgroundData");
-	pAttrib = pElem->FirstAttribute();
-
-	m_background.consoleSize.X = pAttrib->IntValue();
-	pAttrib = pAttrib->Next();
-
-	m_background.consoleSize.Y = pAttrib->IntValue();
-	pAttrib = pAttrib->Next();
-
-	m_background.sizeCommend = pAttrib->Value();
-
-	pSubElem = pElem->FirstChildElement("TextInfo");
-	while (pSubElem != nullptr)
+	for (int i = 0; i < MAP_HIGH; i++)
 	{
-		pAttrib = pSubElem->FirstAttribute();
+		for (int j = 0; j < MAP_WIDTH; j++)
+		{
+			TextInfo* mapBlock = new TextInfo;
 
-		TextInfo* addInfo = new TextInfo();
-
-		addInfo->xPos = pAttrib->IntValue();
-		pAttrib = pAttrib->Next();
-
-		addInfo->yPos = pAttrib->IntValue();
-		pAttrib = pAttrib->Next();
-
-		addInfo->textColor = static_cast<COLOR>(pAttrib->IntValue());
-		pAttrib = pAttrib->Next();
-
-		addInfo->strText = pSubElem->GetText();
-		m_background.textInfo.push_back(addInfo);
-
-		pSubElem = pSubElem->NextSiblingElement();
+			mapBlock->strText = "  ";
+			mapBlock->xPos = (2 * (j+1));
+			mapBlock->yPos = i;
+		}
 	}
-}
-
-void ResourceManager::LoadSingleResultData()
-{
-
 }
 
 void ResourceManager::ReleaseData(GAME_STEP prevGameStep)
@@ -201,6 +191,11 @@ void ResourceManager::ReleaseData(GAME_STEP prevGameStep)
 	case STEP_SINGLE_PLAY:
 		// Single Play ///////////////////////////////
 		
+		for (auto i : m_map)
+		{
+			SafeDelete(i);
+		}
+		m_map.clear();
 		break;
 	case STEP_SINGLE_RESULT:
 		// Single Play Result

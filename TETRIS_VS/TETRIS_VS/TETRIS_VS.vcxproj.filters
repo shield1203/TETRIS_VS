@@ -31,15 +31,6 @@
     <Filter Include="03.Systems\01.MenuSystem">
       <UniqueIdentifier>{4be880a5-9503-4e59-924e-b5c2cab8210e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="04.Managers">
-      <UniqueIdentifier>{cb467f38-95c0-4b4f-8df4-7f1ae1ccfccb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="04.Managers\00.SoundManager">
-      <UniqueIdentifier>{3202ce5f-e2f1-41eb-ad3c-f244007f2ab1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="04.Managers\01.ResourceManager">
-      <UniqueIdentifier>{f66814a0-e397-40cb-bfda-1bf4c7ca8200}</UniqueIdentifier>
-    </Filter>
     <Filter Include="헤더 파일\XMLparser">
       <UniqueIdentifier>{3de789f7-314e-4caf-8c7e-d11ae493fe46}</UniqueIdentifier>
     </Filter>
@@ -60,6 +51,18 @@
     </Filter>
     <Filter Include="03.Systems\02.SinglePlaySystem\01.Block">
       <UniqueIdentifier>{ea1a5fa6-3c84-4aa9-9481-90cadc747e63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Utility">
+      <UniqueIdentifier>{cb467f38-95c0-4b4f-8df4-7f1ae1ccfccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Utility\00.SoundSystem">
+      <UniqueIdentifier>{3202ce5f-e2f1-41eb-ad3c-f244007f2ab1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Utility\01.ResourceManager">
+      <UniqueIdentifier>{f66814a0-e397-40cb-bfda-1bf4c7ca8200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Utility\02.InputSystem">
+      <UniqueIdentifier>{f414d378-4f12-4262-b7f5-931cd0466e9e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -82,10 +85,7 @@
       <Filter>03.Systems\01.MenuSystem</Filter>
     </ClInclude>
     <ClInclude Include="ResourceManager.h">
-      <Filter>04.Managers\01.ResourceManager</Filter>
-    </ClInclude>
-    <ClInclude Include="SoundManager.h">
-      <Filter>04.Managers\00.SoundManager</Filter>
+      <Filter>04.Utility\01.ResourceManager</Filter>
     </ClInclude>
     <ClInclude Include="tinystr.h">
       <Filter>헤더 파일\XMLparser</Filter>
@@ -114,6 +114,12 @@
     <ClInclude Include="Map.h">
       <Filter>03.Systems\02.SinglePlaySystem\00.Map</Filter>
     </ClInclude>
+    <ClInclude Include="SoundSystem.h">
+      <Filter>04.Utility\00.SoundSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
+      <Filter>04.Utility\02.InputSystem</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameStart.cpp">
@@ -129,10 +135,7 @@
       <Filter>03.Systems\01.MenuSystem</Filter>
     </ClCompile>
     <ClCompile Include="ResourceManager.cpp">
-      <Filter>04.Managers\01.ResourceManager</Filter>
-    </ClCompile>
-    <ClCompile Include="SoundManager.cpp">
-      <Filter>04.Managers\00.SoundManager</Filter>
+      <Filter>04.Utility\01.ResourceManager</Filter>
     </ClCompile>
     <ClCompile Include="tinyxmlparser.cpp">
       <Filter>헤더 파일\XMLparser</Filter>
@@ -163,6 +166,12 @@
     </ClCompile>
     <ClCompile Include="Map.cpp">
       <Filter>03.Systems\02.SinglePlaySystem\00.Map</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundSystem.cpp">
+      <Filter>04.Utility\00.SoundSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystem.cpp">
+      <Filter>04.Utility\02.InputSystem</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

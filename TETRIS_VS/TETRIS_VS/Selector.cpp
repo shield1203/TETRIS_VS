@@ -2,62 +2,79 @@
 #include "Selector.h"
 
 #include "ResourceManager.h"
+#include "InputSystem.h"
 
 Selector::Selector()
 {
 	m_resourceManager = ResourceManager::getInstance();
+	m_inputSystem = new InputSystem();
 }
 
 Selector::~Selector()
 {
+	SafeDelete(m_inputSystem);
 }
 
 void Selector::Update()
 {
-	PressKeyCheck();
+	m_inputSystem->CheckKeyboardPressed();
+
+	if (m_inputSystem->IsUpArrowPressed())
+	{
+		MoveUp();
+	}
+
+	if (m_inputSystem->IsDownArrowPressed())
+	{
+		MoveDown();
+	}
+
+	if (m_inputSystem->IsEnterPressed())
+	{
+		SetSelectedMode();
+	}
 }
 
-void Selector::PressKeyCheck()
+void Selector::MoveUp()
 {
-	if (_kbhit()) {
-		int nKey = _getch();
+	auto selector = m_resourceManager->m_menuSprite[SELECTOR]->textInfo.front();
 
-		auto selector = m_resourceManager->m_menuSprite[SELECTOR]->textInfo.front();
-
-		switch (nKey)
+	if (selector->yPos > SINGLE_PLAY)
+	{
+		for (auto i : m_resourceManager->m_menuSprite[SELECTOR]->textInfo)
 		{
-		case UP:
-			if (selector->yPos > SINGLE_PLAY)
-			{
-				for (auto i : m_resourceManager->m_menuSprite[SELECTOR]->textInfo)
-				{
-					i->yPos -= SELECTOR_Y;
-				}
-			}
-			break;
-		case DOWN:
-			if (selector->yPos < EXIT)
-			{
-				for (auto i : m_resourceManager->m_menuSprite[SELECTOR]->textInfo)
-				{
-					i->yPos += SELECTOR_Y;
-				}
-			}
-			break;
-		case ENTER:
-			if (selector->yPos == SINGLE_PLAY)
-			{
-				m_resourceManager->m_curGameStep = STEP_SINGLE_PLAY;
-			}
-			else if (selector->yPos == VERSUS_PLAY)
-			{
-
-			}
-			else if (selector->yPos == EXIT)
-			{
-				m_resourceManager->m_curGameStep = STEP_EXIT;
-			}
-			break;
+			i->yPos -= SELECTOR_Y;
 		}
+	}
+}
+
+void Selector::MoveDown()
+{
+	auto selector = m_resourceManager->m_menuSprite[SELECTOR]->textInfo.front();
+
+	if (selector->yPos < EXIT)
+	{
+		for (auto i : m_resourceManager->m_menuSprite[SELECTOR]->textInfo)
+		{
+			i->yPos += SELECTOR_Y;
+		}
+	}
+}
+
+void Selector::SetSelectedMode()
+{
+	auto selector = m_resourceManager->m_menuSprite[SELECTOR]->textInfo.front();
+
+	switch (selector->yPos)
+	{
+	case SINGLE_PLAY:
+		m_resourceManager->m_curGameStep = STEP_SINGLE_PLAY;
+		break;
+	case VERSUS_PLAY:
+
+		break;
+	case EXIT:
+		m_resourceManager->m_curGameStep = STEP_EXIT;
+		break;
 	}
 }

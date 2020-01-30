@@ -1,21 +1,35 @@
 #pragma once
 class ResourceManager;
+class InputSystem;
+
+enum BlockEnum { BLOCK_START_X = 10, BLOCK_START_Y = 0, BLOCK_SHAPE = 7, BLOCK_TYPE = 4, INIT_SPEED, UP_SPEED };
 
 class Block
 {
 private:
 	ResourceManager* m_resourceManager = nullptr;
+	InputSystem* m_inputSystem = nullptr;
 
-
+	bool bBlock = false;
 public:
-	void PressKeyCheck();
-	bool BlockLocationCheck();
-	void FallBlock();
+	void Update();
+
+	void CreateBlock();
+
+	void MoveLeft();
+	void MoveRight();
+	void MoveDown();
+
+	void DropBlock();
+
+	bool CollisionCheck();
+
+	void SetBlock();
 
 	Block();
 	~Block();
 private:
-	const int n_Block[7][4][4][2] = { // n_Block[BlockShape][BlockType][OneBlock][X Y]
+	const int m_Block[7][4][4][2] = { // n_Block[BlockShape][BlockType][OneBlock][X Y]
 		// бс бс бс	0╣°
 		// бс	
 		{

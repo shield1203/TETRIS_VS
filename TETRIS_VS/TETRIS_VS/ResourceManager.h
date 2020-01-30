@@ -3,8 +3,8 @@
 struct TextInfo
 {
 	string strText;
-	short xPos = 0;
-	short yPos = 0;
+	int xPos = 0;
+	int yPos = 0;
 	COLOR textColor = WHITE;
 };
 
@@ -18,6 +18,16 @@ struct Background
 struct Sprite
 {
 	list<TextInfo*> textInfo;
+};
+
+struct BlockInfo
+{
+	unsigned int blockShape = 0;
+	unsigned int blockType = 0;
+	int xPos = 0;
+	int yPos = 0;
+
+	vector<TextInfo> blocks;
 };
 
 class ResourceManager
@@ -34,17 +44,19 @@ public:
 	vector<Sprite*> m_menuSprite;
 
 	// SinglePlay
-	vector<Sprite*> m_block;
-	vector<Sprite*> m_map;
+
+	// Game
+	BlockInfo m_block;
+	list<TextInfo*> m_map;
 
 public:
 	static ResourceManager* getInstance();
 
 	void LoadGameData(GAME_STEP);
-	
-	void LoadMenuData();
-	void LoadSinglePlayData();
-	void LoadSingleResultData();
+	void LoadBackgroundData(GAME_STEP);
+	void LoadSpriteData(GAME_STEP);
+
+	void InitMap();
 
 	void ReleaseData(GAME_STEP);
 

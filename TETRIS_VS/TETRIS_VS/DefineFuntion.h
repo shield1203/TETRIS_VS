@@ -28,19 +28,15 @@ static void CreateBuffer(COORD size)
 	rect.Top = 0;
 	rect.Bottom = size.Y - 1;
 
-	if (g_screenBuffer[0] != nullptr)
+	for (int i = 0; i < 2; i++)
 	{
-		CloseHandle(g_screenBuffer[0]);
-		g_screenBuffer[0] = nullptr;
+		if (g_screenBuffer[i] != nullptr)
+		{
+			CloseHandle(g_screenBuffer[i]);
+			g_screenBuffer[i] = nullptr;
+		}
+		g_screenBuffer[i] = CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE, 0, NULL, CONSOLE_TEXTMODE_BUFFER, NULL);
 	}
-	g_screenBuffer[0] = CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE, 0, NULL, CONSOLE_TEXTMODE_BUFFER, NULL);
-
-	if (g_screenBuffer[1] != nullptr)
-	{
-		CloseHandle(g_screenBuffer[1]);
-		g_screenBuffer[1] = nullptr;
-	}	
-	g_screenBuffer[1] = CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE, 0, NULL, CONSOLE_TEXTMODE_BUFFER, NULL);
 }
 
 static void WriteBuffer(short xPos, short yPos, string str, unsigned short text = WHITE, unsigned short back = DARK)

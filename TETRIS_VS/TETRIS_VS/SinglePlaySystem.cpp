@@ -3,6 +3,8 @@
 #include "SinglePlaySystem.h"
 
 #include "ResourceManager.h"
+#include "Map.h"
+#include "Block.h"
 
 SinglePlaySystem::SinglePlaySystem()
 {
@@ -24,11 +26,13 @@ void SinglePlaySystem::Init()
 	system(m_sizeCommend.c_str());
 
 	CreateBuffer(m_consoleSize);
+
+	m_block = new Block();
 }
 
 void SinglePlaySystem::Update()
 {
-	
+	m_block->Update();
 }
 
 void SinglePlaySystem::Render()
@@ -39,14 +43,10 @@ void SinglePlaySystem::Render()
 		WriteBuffer(i->xPos, i->yPos, i->strText, i->textColor);
 	}
 
-	// Sprite
-	/*for (auto i : m_resourceManager->m_menuSprite)
+	for (auto i : m_resourceManager->m_block.blocks)
 	{
-		for (auto j : i->textInfo)
-		{
-			WriteBuffer(j->xPos, j->yPos, j->strText, j->textColor);
-		}
-	}*/
+		WriteBuffer(i.xPos + m_resourceManager->m_block.xPos, i.yPos + m_resourceManager->m_block.yPos, i.strText, i.textColor);
+	}
 }
 
 void SinglePlaySystem::Release()
