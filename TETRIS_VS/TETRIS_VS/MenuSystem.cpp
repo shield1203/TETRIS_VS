@@ -3,6 +3,8 @@
 #include "MenuSystem.h"
 
 #include "ResourceManager.h"
+#include "SoundSystem.h"
+
 #include "Title.h"
 #include "Selector.h"
 #include "MenuList.h"
@@ -31,10 +33,15 @@ void MenuSystem::Init()
 	m_title = new Title();
 	m_selector = new Selector();
 	m_menuList = new MenuList();
+
+	SoundSystem::getInstance()->StopBGM();
+	SoundSystem::getInstance()->StartBGM(MENU_BGM);
 }
 
 void MenuSystem::Update()
 {
+	SoundSystem::getInstance()->pSystem->update();
+
 	m_title->Update();
 	m_selector->Update();
 	m_menuList->Update();
@@ -49,7 +56,7 @@ void MenuSystem::Render()
 	}
 
 	// Sprite
-	for (auto i : m_resourceManager->m_menuSprite)
+	for (auto i : m_resourceManager->m_sprite)
 	{
 		for (auto j : i->textInfo)
 		{

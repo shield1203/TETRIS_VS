@@ -1,6 +1,7 @@
 #pragma once
 class SystmeFrame;
 class ResourceManager;
+
 class Title;
 class Selector;
 class MenuList;

@@ -83,3 +83,15 @@ bool InputSystem::IsEnterPressed()
 
 	return false;
 }
+
+bool InputSystem::IsSpacebarPressed()
+{
+	if (m_pressedKey && m_inputKey == SPACE_BAR)
+	{
+		m_pressedKey = false;
+
+		return true;
+	}
+
+	return false;
+}

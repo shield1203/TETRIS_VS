@@ -19,22 +19,22 @@ void MenuList::Update()
 
 void MenuList::SelectorLocationCheck()
 {
-	auto selectorLocation = m_resourceManager->m_menuSprite[SELECTOR]->textInfo.front();
+	auto selectorLocation = m_resourceManager->m_sprite[SELECTOR]->textInfo.front();
 
 	for (int i = MODE_SINGLE_PLAY; i <= MODE_EXIT; i++)
 	{
-		auto listLocation = m_resourceManager->m_menuSprite[i]->textInfo.front();
+		auto listLocation = m_resourceManager->m_sprite[i]->textInfo.front();
 
 		if (selectorLocation->yPos == listLocation->yPos)
 		{
-			for (auto j : m_resourceManager->m_menuSprite[i]->textInfo)
+			for (auto j : m_resourceManager->m_sprite[i]->textInfo)
 			{
 				j->textColor = GREEN;
 			}
 		}
 		else
 		{
-			for (auto j : m_resourceManager->m_menuSprite[i]->textInfo)
+			for (auto j : m_resourceManager->m_sprite[i]->textInfo)
 			{
 				j->textColor = PURPLE;
 			}

@@ -12,6 +12,7 @@ public:
 	bool IsUpArrowPressed();
 	bool IsDownArrowPressed();
 	bool IsEnterPressed();
+	bool IsSpacebarPressed();
 
 	InputSystem();
 	~InputSystem();

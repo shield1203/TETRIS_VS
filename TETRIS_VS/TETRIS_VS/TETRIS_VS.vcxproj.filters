@@ -64,6 +64,12 @@
     <Filter Include="04.Utility\02.InputSystem">
       <UniqueIdentifier>{f414d378-4f12-4262-b7f5-931cd0466e9e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="03.Systems\03.GameOverSystem">
+      <UniqueIdentifier>{6b65abba-44d0-402c-8946-2f279d8e1197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\03.GameOverSystem\00.Button">
+      <UniqueIdentifier>{c169e50e-332a-47dc-bca5-5d938ab582a1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Define.h">
@@ -120,6 +126,12 @@
     <ClInclude Include="InputSystem.h">
       <Filter>04.Utility\02.InputSystem</Filter>
     </ClInclude>
+    <ClInclude Include="GameOverSystem.h">
+      <Filter>03.Systems\03.GameOverSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>03.Systems\03.GameOverSystem\00.Button</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameStart.cpp">
@@ -172,6 +184,12 @@
     </ClCompile>
     <ClCompile Include="InputSystem.cpp">
       <Filter>04.Utility\02.InputSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOverSystem.cpp">
+      <Filter>03.Systems\03.GameOverSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>03.Systems\03.GameOverSystem\00.Button</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

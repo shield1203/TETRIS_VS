@@ -27,32 +27,32 @@ void Title::BlinkTitle()
 		{
 			bChange = false;
 
-			for (auto i : m_resourceManager->m_menuSprite[TITLE_T1]->textInfo)
+			for (auto i : m_resourceManager->m_sprite[TITLE_T1]->textInfo)
 			{
 				i->textColor = DARK_BLUE;
 			}
 
-			for (auto i : m_resourceManager->m_menuSprite[TITLE_E]->textInfo)
+			for (auto i : m_resourceManager->m_sprite[TITLE_E]->textInfo)
 			{
 				i->textColor = DARK_RED;
 			}
 
-			for (auto i : m_resourceManager->m_menuSprite[TITLE_T2]->textInfo)
+			for (auto i : m_resourceManager->m_sprite[TITLE_T2]->textInfo)
 			{
 				i->textColor = DARK_YELLOW;
 			}
 
-			for (auto i : m_resourceManager->m_menuSprite[TITLE_R]->textInfo)
+			for (auto i : m_resourceManager->m_sprite[TITLE_R]->textInfo)
 			{
 				i->textColor = DARK_SKY;
 			}
 
-			for (auto i : m_resourceManager->m_menuSprite[TITLE_I]->textInfo)
+			for (auto i : m_resourceManager->m_sprite[TITLE_I]->textInfo)
 			{
 				i->textColor = DARK_GREEN;
 			}
 
-			for (auto i : m_resourceManager->m_menuSprite[TITLE_S]->textInfo)
+			for (auto i : m_resourceManager->m_sprite[TITLE_S]->textInfo)
 			{
 				i->textColor = DARK_PURPLE;
 			}
@@ -61,32 +61,32 @@ void Title::BlinkTitle()
 		{
 			bChange = true;
 
-			for (auto i : m_resourceManager->m_menuSprite[TITLE_T1]->textInfo)
+			for (auto i : m_resourceManager->m_sprite[TITLE_T1]->textInfo)
 			{
 				i->textColor = BLUE;
 			}
 
-			for (auto i : m_resourceManager->m_menuSprite[TITLE_E]->textInfo)
+			for (auto i : m_resourceManager->m_sprite[TITLE_E]->textInfo)
 			{
 				i->textColor = RED;
 			}
 
-			for (auto i : m_resourceManager->m_menuSprite[TITLE_T2]->textInfo)
+			for (auto i : m_resourceManager->m_sprite[TITLE_T2]->textInfo)
 			{
 				i->textColor = YELLOW;
 			}
 
-			for (auto i : m_resourceManager->m_menuSprite[TITLE_R]->textInfo)
+			for (auto i : m_resourceManager->m_sprite[TITLE_R]->textInfo)
 			{
 				i->textColor = SKY;
 			}
 
-			for (auto i : m_resourceManager->m_menuSprite[TITLE_I]->textInfo)
+			for (auto i : m_resourceManager->m_sprite[TITLE_I]->textInfo)
 			{
 				i->textColor = GREEN;
 			}
 
-			for (auto i : m_resourceManager->m_menuSprite[TITLE_S]->textInfo)
+			for (auto i : m_resourceManager->m_sprite[TITLE_S]->textInfo)
 			{
 				i->textColor = PURPLE;
 			}

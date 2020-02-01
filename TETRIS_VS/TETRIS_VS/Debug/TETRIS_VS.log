@@ -1,2 +1,10 @@
-﻿  SinglePlaySystem.cpp
+﻿  Block.cpp
+  GameOverSystem.cpp
+  GameSystem.cpp
+  Map.cpp
+  MenuSystem.cpp
+  Selector.cpp
+  SinglePlaySystem.cpp
+  SoundSystem.cpp
+  코드를 생성하고 있습니다...
   TETRIS_VS.vcxproj -> F:\TETRIS_VS\TETRIS_VS\Debug\TETRIS_VS.exe

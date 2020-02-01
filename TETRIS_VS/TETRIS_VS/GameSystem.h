@@ -2,6 +2,7 @@
 
 class SystemFrame;
 class ResourceManager;
+class SoundSystem;
 
 class GameSystem
 {
@@ -10,6 +11,7 @@ private:
 
 	SystemFrame* m_systemFrame = nullptr;
 	ResourceManager* m_resourceManager = nullptr;
+	SoundSystem* m_soundSystem = nullptr;
 public:
 	void Process();
 	void Init();

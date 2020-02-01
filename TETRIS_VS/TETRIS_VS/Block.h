@@ -2,7 +2,8 @@
 class ResourceManager;
 class InputSystem;
 
-enum BlockEnum { BLOCK_START_X = 10, BLOCK_START_Y = 0, BLOCK_SHAPE = 7, BLOCK_TYPE = 4, INIT_SPEED, UP_SPEED };
+enum BlockEnum : unsigned int { BLOCK_START_X = 10, BLOCK_START_Y = 0, NEXT_BLOCK_X = 27, NEXT_BLOCK_Y = 3, 
+	BLOCK_SHAPE = 7, BLOCK_TYPE = 4, INIT_SPEED = 400, UP_SPEED = 2 };
 
 class Block
 {
@@ -11,6 +12,9 @@ private:
 	InputSystem* m_inputSystem = nullptr;
 
 	bool bBlock = false;
+	unsigned int m_blockSpeed = 0;
+	unsigned int m_nextBlockShape = 0;
+	unsigned __int64 m_time = 0;
 public:
 	void Update();
 
@@ -19,18 +23,17 @@ public:
 	void MoveLeft();
 	void MoveRight();
 	void MoveDown();
+	void TurnBlock();
 
-	void DropBlock();
+	void MoveStraightDwon();
 
-	bool CollisionCheck();
-
-	void SetBlock();
+	void ApplyToMap();
 
 	Block();
 	~Block();
 private:
-	const int m_Block[7][4][4][2] = { // n_Block[BlockShape][BlockType][OneBlock][X Y]
-		// ■ ■ ■	0번
+	const int m_Block[BLOCK_SHAPE][BLOCK_TYPE][4][2] = { // n_Block[BlockShape][BlockType][OneBlock][X Y]
+		// ■■■	0번
 		// ■	
 		{
 			{{0, 1}, {2, 1}, {4, 1}, {0, 2}},
@@ -38,7 +41,7 @@ private:
 			{{4, 0}, {0, 1}, {2, 1}, {4, 1}},
 			{{2, 0}, {2, 1}, {2, 2}, {4, 2}}
 		},
-		// ■ ■ ■	1번
+		// ■■■	1번
 		//     ■	
 		{
 			{{0, 1}, {2, 1}, {4, 1}, {4, 2}},
@@ -46,16 +49,16 @@ private:
 			{{0, 0}, {0, 1}, {2, 1}, {4, 1}},
 			{{2, 0}, {4, 0}, {2, 1}, {2, 2}}
 		},
-		//   ■ ■	2번
-		// ■ ■
+		//   ■■	2번
+		// ■■
 		{
 			{{2, 1}, {4, 1}, {0, 2}, {2, 2}},
 			{{0, 0}, {0, 1}, {2, 1}, {2, 2}},
 			{{2, 0}, {4, 0}, {0, 1}, {2, 1}},
 			{{2, 0}, {2, 1}, {4, 1}, {4, 2}}
 		},
-		// ■ ■		3번
-		//   ■ ■
+		// ■■		3번
+		//   ■■
 		{
 			{{0, 1}, {2, 1}, {2, 2}, {4, 2}},
 			{{2, 0}, {0, 1}, {2, 1}, {0, 2}},
@@ -63,22 +66,22 @@ private:
 			{{4, 0}, {2, 1}, {4, 1}, {2, 2}}
 		},
 		//   ■		4번
-		// ■ ■ ■ 
+		// ■■■ 
 		{
 			{{2, 0}, {0, 1}, {2, 1}, {4, 1}},
 			{{2, 0}, {2, 1}, {4, 1}, {2, 2}},
 			{{0, 1}, {2, 1}, {4, 1}, {2, 2}},
 			{{2, 0}, {0, 1}, {2, 1}, {2, 2}}
 		},
-		//  ■ ■		5번
-		//  ■ ■ 
+		//  ■■		5번
+		//  ■■ 
 		{
 			{{0, 0}, {2, 0}, {0, 1}, {2, 1}},
 			{{0, 0}, {2, 0}, {0, 1}, {2, 1}},
 			{{0, 0}, {2, 0}, {0, 1}, {2, 1}},
 			{{0, 0}, {2, 0}, {0, 1}, {2, 1}}
 		},
-		//  ■ ■ ■ ■ 		6번
+		//  ■■■■ 		6번
 		{
 			{{0, 1}, {2, 1}, {4, 1}, {6, 1}},
 			{{4, 0}, {4, 1}, {4, 2}, {4, 3}},

@@ -177,4 +177,103 @@
       <TextInfo xPos="0" yPos="24" color="10">¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à</TextInfo>
     </BackgroundData>
   </SinglePlaySystem>
+  <GameOverSystem>
+    <BackgroundData Lines="20" Cols="61" Size="mode con lines=20 cols=61">
+      <TextInfo xPos="4" yPos="1" color="14">¡á¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="19" yPos="1" color="14">¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="30" yPos="1" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="44" yPos="1" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="49" yPos="1" color="14">¡á¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="2" yPos="2" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="12" yPos="2" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="17" yPos="2" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="25" yPos="2" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="30" yPos="2" color="14">¡á¡á¡á</TextInfo>
+      <TextInfo xPos="42" yPos="2" color="14">¡á¡á¡á</TextInfo>
+      <TextInfo xPos="49" yPos="2" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="2" yPos="3" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="17" yPos="3" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="25" yPos="3" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="30" yPos="3" color="14">¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="40" yPos="3" color="14">¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="49" yPos="3" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="2" yPos="4" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="8" yPos="4" color="14">¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="17" yPos="4" color="14">¡á¡á¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="30" yPos="4" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="36" yPos="4" color="14">¡á¡á¡á</TextInfo>
+      <TextInfo xPos="44" yPos="4" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="49" yPos="4" color="14">¡á¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="2" yPos="5" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="12" yPos="5" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="17" yPos="5" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="25" yPos="5" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="30" yPos="5" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="38" yPos="5" color="14">¡á</TextInfo>
+      <TextInfo xPos="44" yPos="5" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="49" yPos="5" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="2" yPos="6" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="12" yPos="6" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="17" yPos="6" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="25" yPos="6" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="30" yPos="6" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="44" yPos="6" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="49" yPos="6" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="4" yPos="7" color="14">¡á¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="17" yPos="7" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="25" yPos="7" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="30" yPos="7" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="44" yPos="7" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="49" yPos="7" color="14">¡á¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="6" yPos="10" color="14">¡á¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="19" yPos="10" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="29" yPos="10" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="34" yPos="10" color="14">¡á¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="45" yPos="10" color="14">¡á¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="4" yPos="11" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="14" yPos="11" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="19" yPos="11" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="29" yPos="11" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="34" yPos="11" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="45" yPos="11" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="53" yPos="11" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="4" yPos="12" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="14" yPos="12" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="19" yPos="12" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="29" yPos="12" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="33" yPos="12" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="45" yPos="12" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="53" yPos="12" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="4" yPos="13" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="14" yPos="13" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="21" yPos="13" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="27" yPos="13" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="34" yPos="13" color="14">¡á¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="45" yPos="13" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="53" yPos="13" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="4" yPos="14" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="14" yPos="14" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="21" yPos="14" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="27" yPos="14" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="34" yPos="14" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="45" yPos="14" color="14">¡á¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="4" yPos="15" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="14" yPos="15" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="21" yPos="15" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="27" yPos="15" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="34" yPos="15" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="45" yPos="15" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="53" yPos="15" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="6" yPos="16" color="14">¡á¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="23" yPos="16" color="14">¡á¡á¡á</TextInfo>
+      <TextInfo xPos="34" yPos="16" color="14">¡á¡á¡á¡á¡á</TextInfo>
+      <TextInfo xPos="45" yPos="16" color="14">¡á¡á</TextInfo>
+      <TextInfo xPos="53" yPos="16" color="14">¡á¡á</TextInfo>
+    </BackgroundData>
+    <SpriteData num="0">
+      <TextInfo xPos="21" yPos="18" color="15">¢¸</TextInfo>
+      <TextInfo xPos="26" yPos="18" color="15">PRESS_ENTER</TextInfo>
+      <TextInfo xPos="40" yPos="18" color="15">¢º</TextInfo>
+    </SpriteData>
+  </GameOverSystem>
 </Resource>

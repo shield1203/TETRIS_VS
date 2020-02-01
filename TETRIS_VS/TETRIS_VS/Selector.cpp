@@ -2,6 +2,7 @@
 #include "Selector.h"
 
 #include "ResourceManager.h"
+#include "SoundSystem.h"
 #include "InputSystem.h"
 
 Selector::Selector()
@@ -37,33 +38,37 @@ void Selector::Update()
 
 void Selector::MoveUp()
 {
-	auto selector = m_resourceManager->m_menuSprite[SELECTOR]->textInfo.front();
+	auto selector = m_resourceManager->m_sprite[SELECTOR]->textInfo.front();
 
 	if (selector->yPos > SINGLE_PLAY)
 	{
-		for (auto i : m_resourceManager->m_menuSprite[SELECTOR]->textInfo)
+		for (auto i : m_resourceManager->m_sprite[SELECTOR]->textInfo)
 		{
 			i->yPos -= SELECTOR_Y;
 		}
+
+		SoundSystem::getInstance()->StartEffect(SOUND_BUTTON);
 	}
 }
 
 void Selector::MoveDown()
 {
-	auto selector = m_resourceManager->m_menuSprite[SELECTOR]->textInfo.front();
+	auto selector = m_resourceManager->m_sprite[SELECTOR]->textInfo.front();
 
 	if (selector->yPos < EXIT)
 	{
-		for (auto i : m_resourceManager->m_menuSprite[SELECTOR]->textInfo)
+		for (auto i : m_resourceManager->m_sprite[SELECTOR]->textInfo)
 		{
 			i->yPos += SELECTOR_Y;
 		}
+
+		SoundSystem::getInstance()->StartEffect(SOUND_BUTTON);
 	}
 }
 
 void Selector::SetSelectedMode()
 {
-	auto selector = m_resourceManager->m_menuSprite[SELECTOR]->textInfo.front();
+	auto selector = m_resourceManager->m_sprite[SELECTOR]->textInfo.front();
 
 	switch (selector->yPos)
 	{
@@ -77,4 +82,6 @@ void Selector::SetSelectedMode()
 		m_resourceManager->m_curGameStep = STEP_EXIT;
 		break;
 	}
+
+	SoundSystem::getInstance()->StartEffect(SOUND_BUTTON);
 }

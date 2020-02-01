@@ -6,7 +6,7 @@ extern short g_bufferIndex;
 // LINKING //
 /////////////
 #pragma comment(lib, "vfw32.lib")
-//#pragma comment(lib, "fmod_vc.lib")
+#pragma comment(lib, "fmod_vc.lib")
 
 //////////////
 // INCLUDES //
@@ -25,6 +25,6 @@ using namespace std;
 ///////////////
 //   SOUND   //
 ///////////////
-//#include"inc/fmod.hpp"
+#include"inc/fmod.hpp"
 
-//using namespace FMOD;
+using namespace FMOD;

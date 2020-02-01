@@ -40,13 +40,13 @@ public:
 
 	Background m_background;
 
-	// Menu
-	vector<Sprite*> m_menuSprite;
+	vector<Sprite*> m_sprite;
 
 	// SinglePlay
 
 	// Game
 	BlockInfo m_block;
+	BlockInfo m_nextBlock;
 	list<TextInfo*> m_map;
 
 public:

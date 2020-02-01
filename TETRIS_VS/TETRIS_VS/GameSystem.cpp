@@ -4,7 +4,10 @@
 
 #include "MenuSystem.h"
 #include "SinglePlaySystem.h"
+#include "GameOverSystem.h"
+
 #include "ResourceManager.h"
+#include "SoundSystem.h"
 
 
 GameSystem::GameSystem()
@@ -21,6 +24,7 @@ GameSystem::~GameSystem()
 {
 	SafeDelete(m_systemFrame);
 	SafeDelete(m_resourceManager);
+	SoundSystem::getInstance()->~SoundSystem();
 }
 
 void GameSystem::Process()
@@ -50,7 +54,8 @@ void GameSystem::Init()
 		case STEP_SINGLE_PLAY:
 			m_systemFrame = new SinglePlaySystem();
 			break;
-		case STEP_SINGLE_RESULT:
+		case STEP_GAMEOVER:
+			m_systemFrame = new GameOverSystem();
 			break;
 		}
 

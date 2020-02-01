@@ -2,7 +2,7 @@
 class ResourceManager;
 class InputSystem;
 
-enum ButtonEnum { BlINK_TIME = 150 };
+enum ButtonEnum { BlINK_TIME = 400 };
 
 class Button
 {

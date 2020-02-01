@@ -3,6 +3,8 @@
 #include "GameOverSystem.h"
 
 #include "ResourceManager.h"
+#include "SoundSystem.h"
+
 #include "Button.h"
 
 GameOverSystem::GameOverSystem()
@@ -27,10 +29,15 @@ void GameOverSystem::Init()
 	CreateBuffer(m_consoleSize);
 
 	m_button = new Button();
+
+	SoundSystem::getInstance()->StopBGM();
+	SoundSystem::getInstance()->StartEffect(SOUND_GAMEOVER);
 }
 
 void GameOverSystem::Update()
 {
+	SoundSystem::getInstance()->pSystem->update();
+
 	m_button->Update();
 }
 
@@ -45,7 +52,7 @@ void GameOverSystem::Render()
 	// Sprite
 	if (m_button->GetState())
 	{
-		for (auto i : m_resourceManager->m_GameOverSprite)
+		for (auto i : m_resourceManager->m_sprite)
 		{
 			for (auto j : i->textInfo)
 			{
@@ -58,4 +65,5 @@ void GameOverSystem::Render()
 void GameOverSystem::Release()
 {
 	m_resourceManager->ReleaseData(STEP_GAMEOVER);
+	SafeDelete(m_button);
 }

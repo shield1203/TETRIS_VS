@@ -17,6 +17,7 @@ ResourceManager::ResourceManager()
 {
 	m_curGameStep = STEP_MENU;
 	m_block.blocks.resize(4);
+	m_nextBlock.blocks.resize(4);
 }
 
 ResourceManager::~ResourceManager()
@@ -41,6 +42,9 @@ void ResourceManager::LoadBackgroundData(GAME_STEP gameStep)
 		break;
 	case STEP_SINGLE_PLAY:
 		strElemnt = "SinglePlaySystem";
+		break;
+	case STEP_GAMEOVER:
+		strElemnt = "GameOverSystem";
 		break;
 	}
 
@@ -98,9 +102,11 @@ void ResourceManager::LoadSpriteData(GAME_STEP gameStep)
 		strElemnt = "MenuSystem";
 		break;
 	case STEP_SINGLE_PLAY:
-		InitMap();
 		return;
 		//strElemnt = "SinglePlaySystem";
+		break;
+	case STEP_GAMEOVER:
+		strElemnt = "GameOverSystem";
 		break;
 	}
 
@@ -143,7 +149,7 @@ void ResourceManager::LoadSpriteData(GAME_STEP gameStep)
 			pSubElem = pSubElem->NextSiblingElement();
 		}
 
-		m_menuSprite.push_back(addSprite);
+		m_sprite.push_back(addSprite);
 
 		pElem = pElem->NextSiblingElement();
 	}
@@ -160,6 +166,8 @@ void ResourceManager::InitMap()
 			mapBlock->strText = "  ";
 			mapBlock->xPos = (2 * (j+1));
 			mapBlock->yPos = i;
+
+			m_map.push_back(mapBlock);
 		}
 	}
 }
@@ -177,7 +185,7 @@ void ResourceManager::ReleaseData(GAME_STEP prevGameStep)
 	case STEP_MENU:
 		// Menu /////////////////////////////////////
 
-		for (auto i : m_menuSprite)
+		for (auto i : m_sprite)
 		{
 			for (auto j : i->textInfo)
 			{
@@ -186,7 +194,7 @@ void ResourceManager::ReleaseData(GAME_STEP prevGameStep)
 			i->textInfo.clear();
 			SafeDelete(i);
 		}
-		m_menuSprite.clear();
+		m_sprite.clear();
 		break;
 	case STEP_SINGLE_PLAY:
 		// Single Play ///////////////////////////////
@@ -197,9 +205,19 @@ void ResourceManager::ReleaseData(GAME_STEP prevGameStep)
 		}
 		m_map.clear();
 		break;
-	case STEP_SINGLE_RESULT:
-		// Single Play Result
+	case STEP_GAMEOVER:
+		// GameOver /////////////////////////////////
 
+		for (auto i : m_sprite)
+		{
+			for (auto j : i->textInfo)
+			{
+				SafeDelete(j);
+			}
+			i->textInfo.clear();
+			SafeDelete(i);
+		}
+		m_sprite.clear();
 		break;
 	}
 }

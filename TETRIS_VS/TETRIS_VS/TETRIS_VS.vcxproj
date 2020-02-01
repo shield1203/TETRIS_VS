@@ -124,9 +124,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Block.h" />
+    <ClInclude Include="Button.h" />
     <ClInclude Include="Define.h" />
     <ClInclude Include="DefineEnum.h" />
     <ClInclude Include="DefineFuntion.h" />
+    <ClInclude Include="GameOverSystem.h" />
     <ClInclude Include="GameSystem.h" />
     <ClInclude Include="InputSystem.h" />
     <ClInclude Include="Map.h" />
@@ -144,6 +146,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Block.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="GameOverSystem.cpp" />
     <ClCompile Include="GameStart.cpp" />
     <ClCompile Include="GameSystem.cpp" />
     <ClCompile Include="InputSystem.cpp" />
