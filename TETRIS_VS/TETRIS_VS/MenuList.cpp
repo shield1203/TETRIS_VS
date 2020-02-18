@@ -19,7 +19,7 @@ void MenuList::Update()
 
 void MenuList::SelectorLocationCheck()
 {
-	auto selectorLocation = m_resourceManager->m_sprite[SELECTOR]->textInfo.front();
+	auto selectorLocation = m_resourceManager->m_sprite[MENU_SELECTOR]->textInfo.front();
 
 	for (int i = MODE_SINGLE_PLAY; i <= MODE_EXIT; i++)
 	{

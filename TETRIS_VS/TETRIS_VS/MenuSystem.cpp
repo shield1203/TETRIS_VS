@@ -6,7 +6,8 @@
 #include "SoundSystem.h"
 
 #include "Title.h"
-#include "Selector.h"
+#include "SelectorFrame.h"
+#include "MenuSelector.h"
 #include "MenuList.h"
 
 MenuSystem::MenuSystem()
@@ -31,8 +32,10 @@ void MenuSystem::Init()
 	CreateBuffer(m_consoleSize);
 
 	m_title = new Title();
-	m_selector = new Selector();
+	m_selector = new MenuSelector();
 	m_menuList = new MenuList();
+
+	m_selector->Init();
 
 	SoundSystem::getInstance()->StopBGM();
 	SoundSystem::getInstance()->StartBGM(MENU_BGM);
@@ -68,4 +71,8 @@ void MenuSystem::Render()
 void MenuSystem::Release()
 {
 	m_resourceManager->ReleaseData(STEP_MENU);
+
+	SafeDelete(m_title);
+	SafeDelete(m_selector);
+	SafeDelete(m_menuList);
 }

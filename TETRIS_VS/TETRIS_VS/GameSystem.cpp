@@ -5,6 +5,7 @@
 #include "MenuSystem.h"
 #include "SinglePlaySystem.h"
 #include "GameOverSystem.h"
+#include "LobbySystem.h"
 
 #include "ResourceManager.h"
 #include "SoundSystem.h"
@@ -56,6 +57,9 @@ void GameSystem::Init()
 			break;
 		case STEP_GAMEOVER:
 			m_systemFrame = new GameOverSystem();
+			break;
+		case STEP_LOBBY:
+			m_systemFrame = new LobbySystem();
 			break;
 		}
 

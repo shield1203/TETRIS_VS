@@ -16,17 +16,11 @@
     <Filter Include="00.Define">
       <UniqueIdentifier>{aa4486d0-028f-401f-8383-97389e9807eb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01.GameStart">
-      <UniqueIdentifier>{5ddfce17-43d9-4c53-8629-a5e970a32085}</UniqueIdentifier>
-    </Filter>
     <Filter Include="02.GameSystem">
       <UniqueIdentifier>{cb1890b0-8ecf-4e48-8289-dd69e8115dbb}</UniqueIdentifier>
     </Filter>
     <Filter Include="03.Systems">
       <UniqueIdentifier>{aafd5c9a-9c42-4ad3-b8df-09dd8101b6dc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="03.Systems\00.SystemFrame">
-      <UniqueIdentifier>{5d0558a3-4186-46c3-9456-19e014a2932b}</UniqueIdentifier>
     </Filter>
     <Filter Include="03.Systems\01.MenuSystem">
       <UniqueIdentifier>{4be880a5-9503-4e59-924e-b5c2cab8210e}</UniqueIdentifier>
@@ -36,9 +30,6 @@
     </Filter>
     <Filter Include="03.Systems\01.MenuSystem\01.Title">
       <UniqueIdentifier>{a0a78968-730d-4118-8e44-3316c5107841}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="03.Systems\01.MenuSystem\02.Selector">
-      <UniqueIdentifier>{86c312fb-4d0f-4187-8072-fbd7036f6d04}</UniqueIdentifier>
     </Filter>
     <Filter Include="03.Systems\02.SinglePlaySystem">
       <UniqueIdentifier>{a9bdd191-4d99-4660-be76-f7d40a193f10}</UniqueIdentifier>
@@ -70,6 +61,30 @@
     <Filter Include="03.Systems\03.GameOverSystem\00.Button">
       <UniqueIdentifier>{c169e50e-332a-47dc-bca5-5d938ab582a1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="03.Systems\04.LobbySystem">
+      <UniqueIdentifier>{5e24f764-0ce0-4d76-8f1b-7146e5b78438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Utility\03.SocketManager">
+      <UniqueIdentifier>{7231aad3-8efd-4367-b67d-922b95d2a32d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Utility\04.PacketManager">
+      <UniqueIdentifier>{95d85c90-51e4-4510-b3b9-0fc4732d4f67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameStart">
+      <UniqueIdentifier>{5ddfce17-43d9-4c53-8629-a5e970a32085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\01.MenuSystem\02.MenuSelector">
+      <UniqueIdentifier>{86c312fb-4d0f-4187-8072-fbd7036f6d04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\00.Frame">
+      <UniqueIdentifier>{5d0558a3-4186-46c3-9456-19e014a2932b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\00.Frame\00.SystemFrame">
+      <UniqueIdentifier>{4b56ebb5-b4ef-4ed0-b761-81fc016e8777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\00.Frame\01.SelectorFrame">
+      <UniqueIdentifier>{70e0649b-9dc9-4816-a120-28983080875d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Define.h">
@@ -77,9 +92,6 @@
     </ClInclude>
     <ClInclude Include="GameSystem.h">
       <Filter>02.GameSystem</Filter>
-    </ClInclude>
-    <ClInclude Include="SystemFrame.h">
-      <Filter>03.Systems\00.SystemFrame</Filter>
     </ClInclude>
     <ClInclude Include="DefineEnum.h">
       <Filter>00.Define</Filter>
@@ -105,9 +117,6 @@
     <ClInclude Include="Title.h">
       <Filter>03.Systems\01.MenuSystem\01.Title</Filter>
     </ClInclude>
-    <ClInclude Include="Selector.h">
-      <Filter>03.Systems\01.MenuSystem\02.Selector</Filter>
-    </ClInclude>
     <ClInclude Include="SinglePlaySystem.h">
       <Filter>03.Systems\02.SinglePlaySystem</Filter>
     </ClInclude>
@@ -132,16 +141,28 @@
     <ClInclude Include="Button.h">
       <Filter>03.Systems\03.GameOverSystem\00.Button</Filter>
     </ClInclude>
+    <ClInclude Include="LobbySystem.h">
+      <Filter>03.Systems\04.LobbySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketManager.h">
+      <Filter>04.Utility\03.SocketManager</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketManager.h">
+      <Filter>04.Utility\04.PacketManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemFrame.h">
+      <Filter>03.Systems\00.Frame\00.SystemFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectorFrame.h">
+      <Filter>03.Systems\00.Frame\01.SelectorFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuSelector.h">
+      <Filter>03.Systems\01.MenuSystem\02.MenuSelector</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GameStart.cpp">
-      <Filter>01.GameStart</Filter>
-    </ClCompile>
     <ClCompile Include="GameSystem.cpp">
       <Filter>02.GameSystem</Filter>
-    </ClCompile>
-    <ClCompile Include="SystemFrame.cpp">
-      <Filter>03.Systems\00.SystemFrame</Filter>
     </ClCompile>
     <ClCompile Include="MenuSystem.cpp">
       <Filter>03.Systems\01.MenuSystem</Filter>
@@ -163,9 +184,6 @@
     </ClCompile>
     <ClCompile Include="Title.cpp">
       <Filter>03.Systems\01.MenuSystem\01.Title</Filter>
-    </ClCompile>
-    <ClCompile Include="Selector.cpp">
-      <Filter>03.Systems\01.MenuSystem\02.Selector</Filter>
     </ClCompile>
     <ClCompile Include="SinglePlaySystem.cpp">
       <Filter>03.Systems\02.SinglePlaySystem</Filter>
@@ -190,6 +208,27 @@
     </ClCompile>
     <ClCompile Include="Button.cpp">
       <Filter>03.Systems\03.GameOverSystem\00.Button</Filter>
+    </ClCompile>
+    <ClCompile Include="LobbySystem.cpp">
+      <Filter>03.Systems\04.LobbySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketManager.cpp">
+      <Filter>04.Utility\03.SocketManager</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketManager.cpp">
+      <Filter>04.Utility\04.PacketManager</Filter>
+    </ClCompile>
+    <ClCompile Include="01.GameStart.cpp">
+      <Filter>01.GameStart</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemFrame.cpp">
+      <Filter>03.Systems\00.Frame\00.SystemFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectorFrame.cpp">
+      <Filter>03.Systems\00.Frame\01.SelectorFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuSelector.cpp">
+      <Filter>03.Systems\01.MenuSystem\02.MenuSelector</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

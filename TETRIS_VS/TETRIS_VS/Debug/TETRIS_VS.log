@@ -1,10 +1,14 @@
-﻿  Block.cpp
-  GameOverSystem.cpp
-  GameSystem.cpp
-  Map.cpp
-  MenuSystem.cpp
-  Selector.cpp
-  SinglePlaySystem.cpp
-  SoundSystem.cpp
+﻿  MenuSystem.cpp
+  MenuList.cpp
+  MenuSelector.cpp
+  SelectorFrame.cpp
+F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\DefineFuntion.h(9,1): warning C4150: 불완전한 형식 'InputSystem'에 대한 포인터를 삭제했습니다. 소멸자가 호출되지 않습니다.
+F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\SelectorFrame.h(3): message : 'InputSystem' 선언을 참조하십시오.
+F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\SelectorFrame.cpp(10): message : 컴파일되는 함수 템플릿 인스턴스화 'void SafeDelete<InputSystem>(T *&)'에 대한 참조를 확인하세요.
+          with
+          [
+              T=InputSystem
+          ]
+  Title.cpp
   코드를 생성하고 있습니다...
   TETRIS_VS.vcxproj -> F:\TETRIS_VS\TETRIS_VS\Debug\TETRIS_VS.exe

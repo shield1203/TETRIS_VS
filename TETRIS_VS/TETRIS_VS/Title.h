@@ -8,7 +8,7 @@ class Title
 private:
 	ResourceManager* m_resourceManager = nullptr;
 
-	unsigned int m_time = 0;
+	unsigned __int64 m_time = 0;
 	bool bChange = false;
 public:
 	void Update();

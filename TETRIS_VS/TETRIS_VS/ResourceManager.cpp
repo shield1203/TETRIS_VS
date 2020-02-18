@@ -46,6 +46,9 @@ void ResourceManager::LoadBackgroundData(GAME_STEP gameStep)
 	case STEP_GAMEOVER:
 		strElemnt = "GameOverSystem";
 		break;
+	case STEP_LOBBY:
+		strElemnt = "LobbySystem";
+		break;
 	}
 
 	TiXmlDocument doc;
@@ -107,6 +110,9 @@ void ResourceManager::LoadSpriteData(GAME_STEP gameStep)
 		break;
 	case STEP_GAMEOVER:
 		strElemnt = "GameOverSystem";
+		break;
+	case STEP_LOBBY:
+		strElemnt = "LobbySystem";
 		break;
 	}
 
@@ -182,20 +188,6 @@ void ResourceManager::ReleaseData(GAME_STEP prevGameStep)
 
 	switch (prevGameStep)
 	{
-	case STEP_MENU:
-		// Menu /////////////////////////////////////
-
-		for (auto i : m_sprite)
-		{
-			for (auto j : i->textInfo)
-			{
-				SafeDelete(j);
-			}
-			i->textInfo.clear();
-			SafeDelete(i);
-		}
-		m_sprite.clear();
-		break;
 	case STEP_SINGLE_PLAY:
 		// Single Play ///////////////////////////////
 		
@@ -205,9 +197,7 @@ void ResourceManager::ReleaseData(GAME_STEP prevGameStep)
 		}
 		m_map.clear();
 		break;
-	case STEP_GAMEOVER:
-		// GameOver /////////////////////////////////
-
+	default:
 		for (auto i : m_sprite)
 		{
 			for (auto j : i->textInfo)

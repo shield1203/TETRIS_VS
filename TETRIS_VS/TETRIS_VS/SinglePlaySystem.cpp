@@ -19,7 +19,7 @@ SinglePlaySystem::~SinglePlaySystem()
 void SinglePlaySystem::Init()
 {
 	m_resourceManager = ResourceManager::getInstance();
-	m_resourceManager->LoadGameData(STEP_SINGLE_PLAY);
+	m_resourceManager->LoadGameData(GAME_STEP::STEP_SINGLE_PLAY);
 
 	m_consoleSize = m_resourceManager->m_background.consoleSize;
 	m_sizeCommend = m_resourceManager->m_background.sizeCommend;
@@ -80,7 +80,7 @@ void SinglePlaySystem::Render()
 
 void SinglePlaySystem::Release()
 {
-	m_resourceManager->ReleaseData(STEP_SINGLE_PLAY);
+	m_resourceManager->ReleaseData(GAME_STEP::STEP_SINGLE_PLAY);
 	SafeDelete(m_block);
 	SafeDelete(m_map);
 }

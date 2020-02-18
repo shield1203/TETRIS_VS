@@ -48,7 +48,6 @@ public:
 	BlockInfo m_block;
 	BlockInfo m_nextBlock;
 	list<TextInfo*> m_map;
-
 public:
 	static ResourceManager* getInstance();
 

@@ -16,7 +16,7 @@ SoundSystem* SoundSystem::getInstance()
 SoundSystem::SoundSystem()
 {
 	System_Create(&pSystem);
-	pSystem->init(7, FMOD_INIT_NORMAL, nullptr);
+	pSystem->init(8, FMOD_INIT_NORMAL, nullptr);
 
 	LoadSoundData();
 
