@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "SocketManager.h"
+#include "PacketManager.h"
 
 SocketManager* SocketManager::Inst = nullptr;
 
@@ -14,6 +15,8 @@ SocketManager* SocketManager::getInstance()
 
 SocketManager::SocketManager()
 {
+	m_packetManager = PacketManager::getInstance();
+
 	WSAStartup(MAKEWORD(2, 2), &wsadata);
 
 	m_sock = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
@@ -25,7 +28,40 @@ SocketManager::SocketManager()
 
 SocketManager::~SocketManager()
 {
-	
+	CleanSocket();
+	SafeDelete(m_packetManager);
+}
+
+void SocketManager::Recv(GAME_STEP gameStep)
+{
+	switch (gameStep)
+	{
+	case STEP_LOBBY:
+
+		break;
+	case STEP_ROOM:
+
+		break;
+	case STEP_VERSUS_PLAY:
+
+		break;
+	}
+}
+
+void SocketManager::Send(GAME_STEP gameStep)
+{
+	switch (gameStep)
+	{
+	case STEP_LOBBY:
+
+		break;
+	case STEP_ROOM:
+
+		break;
+	case STEP_VERSUS_PLAY:
+
+		break;
+	}
 }
 
 void SocketManager::CleanSocket()

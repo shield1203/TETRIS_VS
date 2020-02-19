@@ -24,6 +24,8 @@ private:
 public:
 	LobbyPacket* m_lobbyPacket = nullptr;
 	list<GameRoom*>m_roomList;
+
+
 public:
 	static PacketManager* getInstance();
 

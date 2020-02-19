@@ -12,6 +12,7 @@ MenuSelector::MenuSelector()
 
 MenuSelector::~MenuSelector()
 {
+	SafeDelete(m_inputSystem);
 }
 
 void MenuSelector::Init()

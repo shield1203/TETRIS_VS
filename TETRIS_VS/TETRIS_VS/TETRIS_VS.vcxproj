@@ -131,6 +131,7 @@
     <ClInclude Include="GameOverSystem.h" />
     <ClInclude Include="GameSystem.h" />
     <ClInclude Include="InputSystem.h" />
+    <ClInclude Include="LobbySelector.h" />
     <ClInclude Include="LobbySystem.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="MenuSystem.h" />
@@ -155,6 +156,7 @@
     <ClCompile Include="01.GameStart.cpp" />
     <ClCompile Include="GameSystem.cpp" />
     <ClCompile Include="InputSystem.cpp" />
+    <ClCompile Include="LobbySelector.cpp" />
     <ClCompile Include="LobbySystem.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="MenuSystem.cpp" />

@@ -14,10 +14,13 @@ PacketManager* PacketManager::getInstance()
 
 PacketManager::PacketManager()
 {
+	m_lobbyPacket = new LobbyPacket;
 }
 
 PacketManager::~PacketManager()
 {
+	SafeDelete(m_lobbyPacket);
+	ClearRoomList();
 }
 
 void PacketManager::ClearRoomList()

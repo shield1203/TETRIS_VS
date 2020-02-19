@@ -85,6 +85,9 @@
     <Filter Include="03.Systems\00.Frame\01.SelectorFrame">
       <UniqueIdentifier>{70e0649b-9dc9-4816-a120-28983080875d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="03.Systems\04.LobbySystem\00.LobbySelector">
+      <UniqueIdentifier>{a81f5988-299c-4098-9308-ac398cd378a7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Define.h">
@@ -159,6 +162,9 @@
     <ClInclude Include="MenuSelector.h">
       <Filter>03.Systems\01.MenuSystem\02.MenuSelector</Filter>
     </ClInclude>
+    <ClInclude Include="LobbySelector.h">
+      <Filter>03.Systems\04.LobbySystem\00.LobbySelector</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameSystem.cpp">
@@ -229,6 +235,9 @@
     </ClCompile>
     <ClCompile Include="MenuSelector.cpp">
       <Filter>03.Systems\01.MenuSystem\02.MenuSelector</Filter>
+    </ClCompile>
+    <ClCompile Include="LobbySelector.cpp">
+      <Filter>03.Systems\04.LobbySystem\00.LobbySelector</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

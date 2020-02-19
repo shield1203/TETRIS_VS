@@ -336,6 +336,10 @@
 
       <TextInfo xPos="0" yPos="13" color="11">■</TextInfo>
       <TextInfo xPos="31" yPos="13" color="11">┃</TextInfo>
+      <TextInfo xPos="35" yPos="13" color="15">◎</TextInfo>
+      <TextInfo xPos="38" yPos="13" color="15">뒤로가기</TextInfo>
+      <TextInfo xPos="47" yPos="13" color="15">:</TextInfo>
+      <TextInfo xPos="49" yPos="13" color="15">←</TextInfo>
       <TextInfo xPos="52" yPos="13" color="11">■</TextInfo>
 
       <TextInfo xPos="0" yPos="14" color="11">■</TextInfo>

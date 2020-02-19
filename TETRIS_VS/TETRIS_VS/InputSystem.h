@@ -11,6 +11,7 @@ public:
 	bool IsRightArrowPressed();
 	bool IsUpArrowPressed();
 	bool IsDownArrowPressed();
+	bool IsKeySPressed();
 	bool IsEnterPressed();
 	bool IsSpacebarPressed();
 

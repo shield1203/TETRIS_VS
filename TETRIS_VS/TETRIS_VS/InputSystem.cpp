@@ -72,6 +72,18 @@ bool InputSystem::IsDownArrowPressed()
 	return false;
 }
 
+bool InputSystem::IsKeySPressed()
+{
+	if (m_pressedKey && m_inputKey == KEY_S)
+	{
+		m_pressedKey = false;
+
+		return true;
+	}
+
+	return false;
+}
+
 bool InputSystem::IsEnterPressed()
 {
 	if (m_pressedKey && m_inputKey == ENTER)
