@@ -361,21 +361,38 @@
       <TextInfo xPos="0" yPos="18" color="11">■</TextInfo>
       <TextInfo xPos="31" yPos="18" color="11">┃</TextInfo>
       <TextInfo xPos="52" yPos="18" color="11">■</TextInfo>
-
       <TextInfo xPos="0" yPos="19" color="11">■</TextInfo>
       <TextInfo xPos="31" yPos="19" color="11">┃</TextInfo>
       <TextInfo xPos="52" yPos="19" color="11">■</TextInfo>
-
       <TextInfo xPos="0" yPos="20" color="11">■</TextInfo>
       <TextInfo xPos="31" yPos="20" color="11">┃</TextInfo>
       <TextInfo xPos="52" yPos="20" color="11">■</TextInfo>
-
       <TextInfo xPos="0" yPos="21" color="11">■■■■■■■■■■■■■■■■■■■■■■■■■■■</TextInfo>
     </BackgroundData>
     <SpriteData num="0">
       <TextInfo xPos="4" yPos="4" color="10">▶</TextInfo>
       <TextInfo xPos="7" yPos="4" color="15">[</TextInfo>
       <TextInfo xPos="27" yPos="4" color="15">]</TextInfo>
+    </SpriteData>
+    <SpriteData num="1">
+      <TextInfo xPos="12" yPos="8" color="4">□□□□□□□□□□□□□□□□</TextInfo>
+      <TextInfo xPos="12" yPos="9" color="4">□</TextInfo>
+      <TextInfo xPos="42" yPos="9" color="4">□</TextInfo>
+      <TextInfo xPos="12" yPos="10" color="4">□</TextInfo>
+      <TextInfo xPos="22" yPos="10" color="13">해당</TextInfo>
+      <TextInfo xPos="27" yPos="10" color="13">게임룸에</TextInfo>
+      <TextInfo xPos="42" yPos="10" color="4">□</TextInfo>
+      <TextInfo xPos="12" yPos="11" color="4">□</TextInfo>
+      <TextInfo xPos="19" yPos="11" color="13">입장할 수 없습니다.</TextInfo>
+      <TextInfo xPos="26" yPos="11" color="13">수</TextInfo>
+      <TextInfo xPos="29" yPos="11" color="13">없습니다.</TextInfo>
+      <TextInfo xPos="42" yPos="11" color="4">□</TextInfo>
+      <TextInfo xPos="12" yPos="12" color="4">□</TextInfo>
+      <TextInfo xPos="42" yPos="12" color="4">□</TextInfo>
+      <TextInfo xPos="12" yPos="13" color="4">□</TextInfo>
+      <TextInfo xPos="21" yPos="13" color="13">▶Press_Enter◀</TextInfo>
+      <TextInfo xPos="42" yPos="13" color="4">□</TextInfo>
+      <TextInfo xPos="12" yPos="14" color="4">□□□□□□□□□□□□□□□□</TextInfo>
     </SpriteData>
   </LobbySystem>
 </Resource>

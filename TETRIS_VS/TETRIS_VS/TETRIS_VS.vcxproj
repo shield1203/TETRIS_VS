@@ -129,8 +129,10 @@
     <ClInclude Include="DefineEnum.h" />
     <ClInclude Include="DefineFuntion.h" />
     <ClInclude Include="GameOverSystem.h" />
+    <ClInclude Include="GameRoomSystem.h" />
     <ClInclude Include="GameSystem.h" />
     <ClInclude Include="InputSystem.h" />
+    <ClInclude Include="LobbyBoard.h" />
     <ClInclude Include="LobbySelector.h" />
     <ClInclude Include="LobbySystem.h" />
     <ClInclude Include="Map.h" />
@@ -154,8 +156,10 @@
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="GameOverSystem.cpp" />
     <ClCompile Include="01.GameStart.cpp" />
+    <ClCompile Include="GameRoomSystem.cpp" />
     <ClCompile Include="GameSystem.cpp" />
     <ClCompile Include="InputSystem.cpp" />
+    <ClCompile Include="LobbyBoard.cpp" />
     <ClCompile Include="LobbySelector.cpp" />
     <ClCompile Include="LobbySystem.cpp" />
     <ClCompile Include="Map.cpp" />

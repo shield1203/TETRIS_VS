@@ -44,6 +44,10 @@ void LobbySelector::Update()
 			Select();
 		}
 	}
+	else
+	{
+		ListEmpty();
+	}
 
 	if (m_inputSystem->IsLeftArrowPressed())
 	{
@@ -54,6 +58,10 @@ void LobbySelector::Update()
 	{
 		ReqestCreateRoom();
 	}
+}
+void LobbySelector::ListEmpty()
+{
+	m_selectedRoom = ROOM_LIST_Y;
 }
 
 void LobbySelector::MoveUp()
@@ -66,7 +74,7 @@ void LobbySelector::MoveUp()
 
 		for (auto i : m_resourceManager->m_sprite[LOBBY_SELECTOR]->textInfo)
 		{
-			i->yPos = m_selectedRoom;
+			i->yPos = m_selectedRoom + ROOM_LIST_Y;
 		}
 
 		SoundSystem::getInstance()->StartEffect(SOUND_BUTTON);
@@ -83,7 +91,7 @@ void LobbySelector::MoveDown()
 
 		for (auto i : m_resourceManager->m_sprite[LOBBY_SELECTOR]->textInfo)
 		{
-			i->yPos = m_selectedRoom;
+			i->yPos = m_selectedRoom + ROOM_LIST_Y;
 		}
 
 		SoundSystem::getInstance()->StartEffect(SOUND_BUTTON);
@@ -104,10 +112,21 @@ void LobbySelector::BackMenu()
 
 void LobbySelector::ReqeatEnterRoom()
 {
-	// 패킷에 유저 상태 변경
+	m_packetManager->m_lobbyPacket->userReq = USER_LOBBY::LOBBY_ENTER_ROOM;
+
+	int roomNum = 0;
+	for (auto i : m_packetManager->m_roomList)
+	{
+		if (roomNum == m_selectedRoom)
+		{
+			m_packetManager->m_lobbyPacket->n_roomNum = i->m_roomNum;
+			break;
+		}
+		roomNum++;
+	}
 }
 
 void LobbySelector::ReqestCreateRoom()
 {
-	// 패킷에 유저 상태 변경
+	m_packetManager->m_lobbyPacket->userReq = USER_LOBBY::LOBBY_CREATE_ROOM;
 }

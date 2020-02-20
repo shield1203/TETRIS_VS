@@ -88,6 +88,12 @@
     <Filter Include="03.Systems\04.LobbySystem\00.LobbySelector">
       <UniqueIdentifier>{a81f5988-299c-4098-9308-ac398cd378a7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="03.Systems\04.LobbySystem\01.LobbyBoard">
+      <UniqueIdentifier>{ffdf8af4-129c-47bb-a21f-0073e49909ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\05.GameRoomSystem">
+      <UniqueIdentifier>{f2e53b77-5aee-49d8-9ddb-b41c94fd8b9d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Define.h">
@@ -165,6 +171,12 @@
     <ClInclude Include="LobbySelector.h">
       <Filter>03.Systems\04.LobbySystem\00.LobbySelector</Filter>
     </ClInclude>
+    <ClInclude Include="LobbyBoard.h">
+      <Filter>03.Systems\04.LobbySystem\01.LobbyBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="GameRoomSystem.h">
+      <Filter>03.Systems\05.GameRoomSystem</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameSystem.cpp">
@@ -238,6 +250,12 @@
     </ClCompile>
     <ClCompile Include="LobbySelector.cpp">
       <Filter>03.Systems\04.LobbySystem\00.LobbySelector</Filter>
+    </ClCompile>
+    <ClCompile Include="LobbyBoard.cpp">
+      <Filter>03.Systems\04.LobbySystem\01.LobbyBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="GameRoomSystem.cpp">
+      <Filter>03.Systems\05.GameRoomSystem</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

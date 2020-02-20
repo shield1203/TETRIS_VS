@@ -15,12 +15,20 @@ PacketManager* PacketManager::getInstance()
 PacketManager::PacketManager()
 {
 	m_lobbyPacket = new LobbyPacket;
+
+	m_1PGameRoomPacket = new RoomPacket;
+	m_2PGameRoomPacket = new RoomPacket;
 }
 
 PacketManager::~PacketManager()
 {
 	SafeDelete(m_lobbyPacket);
 	ClearRoomList();
+
+	SafeDelete(m_1PGameRoomPacket);
+	SafeDelete(m_2PGameRoomPacket);
+
+	Inst = nullptr;
 }
 
 void PacketManager::ClearRoomList()

@@ -40,11 +40,11 @@ void GameSystem::Process()
 
 void GameSystem::Init()
 {
-	if (m_curGameStep != m_resourceManager->m_curGameStep)
+	while(m_curGameStep != m_resourceManager->m_curGameStep)
 	{
 		m_systemFrame->Release();
 		SafeDelete(m_systemFrame);
-
+		 
 		m_curGameStep = m_resourceManager->m_curGameStep;
 
 		switch (m_curGameStep)

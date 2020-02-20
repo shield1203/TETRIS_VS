@@ -16,6 +16,7 @@ public:
 	virtual void MoveDown();
 	virtual void Select();
 
+	void ListEmpty();
 	void BackMenu();
 	void ReqeatEnterRoom();
 	void ReqestCreateRoom();

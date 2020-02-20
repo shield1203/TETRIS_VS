@@ -3,6 +3,7 @@ class ResourceManager;
 class SocketManager;
 class PacketManager;
 class SelectorFrame;
+class LobbyBoard;
 
 class LobbySystem : public SystemFrame
 {
@@ -12,6 +13,7 @@ private:
 	PacketManager* m_packetManager = nullptr;
 
 	SelectorFrame* m_selector = nullptr;
+	LobbyBoard* m_lobbyboard = nullptr;
 public:
 	virtual void Init();
 	virtual void Update();
