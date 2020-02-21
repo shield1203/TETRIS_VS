@@ -94,6 +94,9 @@
     <Filter Include="03.Systems\05.GameRoomSystem">
       <UniqueIdentifier>{f2e53b77-5aee-49d8-9ddb-b41c94fd8b9d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="03.Systems\05.GameRoomSystem\00.ReadyButton">
+      <UniqueIdentifier>{b2df8a15-b4fc-4c14-931b-f478eb4a37ce}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Define.h">
@@ -177,6 +180,9 @@
     <ClInclude Include="GameRoomSystem.h">
       <Filter>03.Systems\05.GameRoomSystem</Filter>
     </ClInclude>
+    <ClInclude Include="ReadyButton.h">
+      <Filter>03.Systems\05.GameRoomSystem\00.ReadyButton</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameSystem.cpp">
@@ -236,9 +242,6 @@
     <ClCompile Include="PacketManager.cpp">
       <Filter>04.Utility\04.PacketManager</Filter>
     </ClCompile>
-    <ClCompile Include="01.GameStart.cpp">
-      <Filter>01.GameStart</Filter>
-    </ClCompile>
     <ClCompile Include="SystemFrame.cpp">
       <Filter>03.Systems\00.Frame\00.SystemFrame</Filter>
     </ClCompile>
@@ -256,6 +259,12 @@
     </ClCompile>
     <ClCompile Include="GameRoomSystem.cpp">
       <Filter>03.Systems\05.GameRoomSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStart.cpp">
+      <Filter>01.GameStart</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadyButton.cpp">
+      <Filter>03.Systems\05.GameRoomSystem\00.ReadyButton</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

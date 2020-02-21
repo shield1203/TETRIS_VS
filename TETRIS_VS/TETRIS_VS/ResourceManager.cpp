@@ -49,6 +49,9 @@ void ResourceManager::LoadBackgroundData(GAME_STEP gameStep)
 	case STEP_LOBBY:
 		strElemnt = "LobbySystem";
 		break;
+	case STEP_ROOM:
+		strElemnt = "GameRoomSystem";
+		break;
 	}
 
 	TiXmlDocument doc;
@@ -113,6 +116,9 @@ void ResourceManager::LoadSpriteData(GAME_STEP gameStep)
 		break;
 	case STEP_LOBBY:
 		strElemnt = "LobbySystem";
+		break;
+	case STEP_ROOM:
+		strElemnt = "GameRoomSystem";
 		break;
 	}
 

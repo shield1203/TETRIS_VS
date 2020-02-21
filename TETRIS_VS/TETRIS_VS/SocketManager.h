@@ -32,4 +32,3 @@ public:
 
 	~SocketManager();
 };
-
