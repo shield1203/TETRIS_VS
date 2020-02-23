@@ -80,6 +80,29 @@ void LobbySystem::Render()
 		{
 			WriteBuffer(i->xPos, i->yPos, i->strText, i->textColor);
 		}
+
+		// RoomList
+		unsigned int n_count = 0;
+		for (auto i : m_packetManager->m_roomList)
+		{
+			LOBBY listState;
+			if (i->m_userCount < 2)
+			{
+				listState = LOBBY::LOBBY_LIST_POSSIBLE;
+			}
+			else
+			{
+				listState = LOBBY::LOBBY_LIST_IMPOSSIBLE;
+			}
+
+			for (auto j : m_resourceManager->m_sprite[listState]->textInfo)
+			{
+				WriteBuffer(j->xPos, j->yPos + n_count, j->strText, j->textColor);
+			}
+
+			WriteBuffer(ROOM_LIST_XPOS, ROOM_LIST_YPOS + n_count, to_string(i->m_roomNum), WHITE);
+			n_count++;
+		}
 	}
 	
 	if(!m_packetManager->m_lobbyPacket->b_enterRoom)

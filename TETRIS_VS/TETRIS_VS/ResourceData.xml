@@ -383,6 +383,14 @@
       <TextInfo xPos="42" yPos="13" color="4">□</TextInfo>
       <TextInfo xPos="12" yPos="14" color="4">□□□□□□□□□□□□□□□□</TextInfo>
     </SpriteData>
+    <SpriteData num="2">
+      <TextInfo xPos="9" yPos="4" color="15">NO.</TextInfo>
+      <TextInfo xPos="18" yPos="4" color="10">입장가능</TextInfo>
+    </SpriteData>
+    <SpriteData num="3">
+      <TextInfo xPos="9" yPos="4" color="15">NO.</TextInfo>
+      <TextInfo xPos="18" yPos="4" color="12">게임중</TextInfo>
+    </SpriteData>
   </LobbySystem>
   <GameRoomSystem>
     <BackgroundData Lines="20" Cols="61" Size="mode con lines=15 cols=54">

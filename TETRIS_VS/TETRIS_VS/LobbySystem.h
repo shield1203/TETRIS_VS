@@ -5,6 +5,8 @@ class PacketManager;
 class SelectorFrame;
 class LobbyBoard;
 
+enum  ROOM_LIST : unsigned int { ROOM_LIST_YPOS = 4, ROOM_LIST_XPOS = 12 };
+
 class LobbySystem : public SystemFrame
 {
 private:

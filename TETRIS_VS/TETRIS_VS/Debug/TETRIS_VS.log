@@ -1,7 +1,7 @@
-﻿  01.GameStart.cpp
-  Block.cpp
+﻿  Block.cpp
   Button.cpp
   GameOverSystem.cpp
+  GameStart.cpp
   GameRoomSystem.cpp
   GameSystem.cpp
   InputSystem.cpp
@@ -16,11 +16,12 @@ C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\conio.h(453): m
 F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\LobbySelector.cpp(88,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   LobbySystem.cpp
   Map.cpp
-  MenuList.cpp
-  MenuSelector.cpp
   MenuSystem.cpp
+  MenuList.cpp
   PacketManager.cpp
+  ReadyButton.cpp
   ResourceManager.cpp
+  MenuSelector.cpp
   SelectorFrame.cpp
 F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\DefineFuntion.h(9,1): warning C4150: 불완전한 형식 'InputSystem'에 대한 포인터를 삭제했습니다. 소멸자가 호출되지 않습니다.
 F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\SelectorFrame.h(3): message : 'InputSystem' 선언을 참조하십시오.
@@ -33,9 +34,9 @@ F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\SelectorFrame.cpp(10): message : 컴파일되�
   SocketManager.cpp
 F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\SocketManager.cpp(49,1): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1831): message : 'inet_addr' 선언을 참조하십시오.
-  SoundSystem.cpp
   코드를 생성하고 있습니다...
   컴파일하고 있습니다...
+  SoundSystem.cpp
   SystemFrame.cpp
   Title.cpp
   코드를 생성하고 있습니다...
