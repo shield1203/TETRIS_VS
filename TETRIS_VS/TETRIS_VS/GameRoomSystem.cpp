@@ -54,7 +54,7 @@ void GameRoomSystem::Render()
 	}
 
 	// Sprite
-	WriteBuffer(ROOM_NUM_XPOS, ROOM_NUM_YPOS, to_string(m_packetManager->m_1PGameRoomPacket->m_roomNum), WHITE);
+	WriteBuffer(ROOM_NUM_XPOS, ROOM_NUM_YPOS, to_string(m_packetManager->m_lobbyPacket->n_roomNum), WHITE);
 
 	// 1 Player
 	if (m_packetManager->m_1PGameRoomPacket->bOn)
@@ -124,4 +124,10 @@ void GameRoomSystem::Release()
 	m_resourceManager->ReleaseData(STEP_ROOM);
 
 	SafeDelete(m_readyButton);
+
+	if (m_resourceManager->m_curGameStep == STEP_MENU)
+	{
+		SocketManager::getInstance()->CleanSocket();
+		SafeDelete(m_socketManager);
+	}
 }

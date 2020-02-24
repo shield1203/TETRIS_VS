@@ -1,5 +1,6 @@
 #pragma once
 
+// Lobby
 enum class USER_LOBBY : unsigned int { LOBBY_IDLE, LOBBY_CREATE_ROOM, LOBBY_ENTER_ROOM };
 
 struct LobbyPacket
@@ -10,19 +11,34 @@ struct LobbyPacket
 	int n_roomCount = 0;
 };
 
-struct GameRoom
+struct GameRoom_Lobby
 {
 	int m_roomNum;
 	int m_userCount = 0;
 };
 
-struct RoomPacket
+struct LobbySendPacket
 {
-	int m_roomNum;
+	LobbyPacket lobbyPacket;
+	GameRoom_Lobby gameRoom_lobby[20];
+};
+
+// GameRoom
+enum class USER_ROOM : unsigned int { ROOM_IDLE, ROOM_BACK_LOBBY, ROOM_GAME_START };
+
+struct GameRoomPacket
+{
+	USER_ROOM userReq = USER_ROOM::ROOM_IDLE;
+	int userNum = 0;
 	bool bOn = false;
 	bool bOwner = false;
 	bool bReady = false;
 	bool bGameStart = false;
+};
+
+struct PlayGamePacket
+{
+	
 };
 
 class PacketManager
@@ -32,14 +48,23 @@ private:
 	PacketManager();
 public:
 	LobbyPacket* m_lobbyPacket = nullptr;
-	list<GameRoom*>m_roomList;
+	LobbySendPacket* m_lobbySendPacket = nullptr;
+	list<GameRoom_Lobby*>m_roomList;
 
-	RoomPacket* m_1PGameRoomPacket = nullptr;
-	RoomPacket* m_2PGameRoomPacket = nullptr;
+	GameRoomPacket* m_1PGameRoomPacket = nullptr;
+	GameRoomPacket* m_2PGameRoomPacket = nullptr;
+
+	//PlayGamePacket* m_1PGamePacket = nullptr;
+	//PlayGamePacket* m_2PGamePacket = nullptr;
 public:
 	static PacketManager* getInstance();
 
 	void ClearRoomList();
+
+	void SetLobbySendPacket(LobbySendPacket*);
+	void SetLobbyPacket();
+	void SetRoomList();
+	void SetGameRoomPacket(GameRoomPacket*);
 
 	~PacketManager();
 };

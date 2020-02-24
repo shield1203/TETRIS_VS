@@ -3,7 +3,7 @@ extern HANDLE g_screenBuffer[2];
 extern short g_bufferIndex;
 
 #define PORT_NUM 21524
-#define MAX_MSG_LEN 256
+#define MAX_MSG_LEN 512
 #define SERVER_IP "203.232.193.170"
 
 /////////////

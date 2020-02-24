@@ -48,12 +48,6 @@ void LobbySystem::Update()
 	SoundSystem::getInstance()->pSystem->update();
 
 	m_socketManager->Communication(m_resourceManager->m_curGameStep);
-	
-	if (m_packetManager->m_1PGameRoomPacket->bOn)
-	{
-		m_resourceManager->m_curGameStep = STEP_ROOM;
-		return;
-	}
 
 	if (m_packetManager->m_lobbyPacket->b_enterRoom)
 	{

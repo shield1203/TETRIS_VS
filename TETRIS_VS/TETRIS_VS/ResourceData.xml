@@ -440,35 +440,35 @@
       <TextInfo xPos="0" yPos="13" color="11">¡á</TextInfo>
       <TextInfo xPos="52" yPos="13" color="11">¡á</TextInfo>
       <TextInfo xPos="0" yPos="14" color="11">¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á</TextInfo>
-      <SpriteData num="1">
-        <TextInfo xPos="9" yPos="5" color="14">¡ã</TextInfo>
-        <TextInfo xPos="7" yPos="6" color="14">¢¸¡Û¢º</TextInfo>
-        <TextInfo xPos="9" yPos="7" color="14">¡á</TextInfo>
-        <TextInfo xPos="9" yPos="8" color="14">¡á</TextInfo>
-        <TextInfo xPos="7" yPos="9" color="14">¡á¡á¡á</TextInfo>
-      </SpriteData>
-      <SpriteData num="2">
-        <TextInfo xPos="42" yPos="5" color="14">¡ä</TextInfo>
-        <TextInfo xPos="40" yPos="5" color="14">¢¹¡Ü¢·</TextInfo>
-        <TextInfo xPos="42" yPos="6" color="14">¡à</TextInfo>
-        <TextInfo xPos="42" yPos="7" color="14">¡à</TextInfo>
-        <TextInfo xPos="40" yPos="8" color="14">¡à¡à¡à</TextInfo>
-      </SpriteData>
-      <SpriteData num="3">
-        <TextInfo xPos="6" yPos="11" color="10">¢ÂREADY</TextInfo>
-      </SpriteData>
-      <SpriteData num="4">
-        <TextInfo xPos="39" yPos="11" color="10">¢ÂREADY</TextInfo>
-      </SpriteData>
-      <SpriteData num="5">
-        <TextInfo xPos="25" yPos="12" color="13">START</TextInfo>
-      </SpriteData>
-      <SpriteData num="6">
-        <TextInfo xPos="8" yPos="4" color="3">OWNER</TextInfo>
-      </SpriteData>
-      <SpriteData num="7">
-        <TextInfo xPos="41" yPos="4" color="3">OWNER</TextInfo>
-      </SpriteData>
-    </BackgroundData>>  
+    </BackgroundData>
+    <SpriteData num="1">
+      <TextInfo xPos="9" yPos="5" color="14">¡ã</TextInfo>
+      <TextInfo xPos="7" yPos="6" color="14">¢¸¡Û¢º</TextInfo>
+      <TextInfo xPos="9" yPos="7" color="14">¡á</TextInfo>
+      <TextInfo xPos="9" yPos="8" color="14">¡á</TextInfo>
+      <TextInfo xPos="7" yPos="9" color="14">¡á¡á¡á</TextInfo>
+    </SpriteData>
+    <SpriteData num="2">
+      <TextInfo xPos="42" yPos="5" color="14">¡ä</TextInfo>
+      <TextInfo xPos="40" yPos="5" color="14">¢¹¡Ü¢·</TextInfo>
+      <TextInfo xPos="42" yPos="6" color="14">¡à</TextInfo>
+      <TextInfo xPos="42" yPos="7" color="14">¡à</TextInfo>
+      <TextInfo xPos="40" yPos="8" color="14">¡à¡à¡à</TextInfo>
+    </SpriteData>
+    <SpriteData num="3">
+      <TextInfo xPos="6" yPos="11" color="10">¢ÂREADY</TextInfo>
+    </SpriteData>
+    <SpriteData num="4">
+      <TextInfo xPos="39" yPos="11" color="10">¢ÂREADY</TextInfo>
+    </SpriteData>
+    <SpriteData num="5">
+      <TextInfo xPos="25" yPos="12" color="13">START</TextInfo>
+    </SpriteData>
+    <SpriteData num="6">
+      <TextInfo xPos="8" yPos="4" color="3">OWNER</TextInfo>
+    </SpriteData>
+    <SpriteData num="7">
+      <TextInfo xPos="41" yPos="4" color="3">OWNER</TextInfo>
+    </SpriteData>
   </GameRoomSystem>
 </Resource>

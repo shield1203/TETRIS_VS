@@ -23,6 +23,17 @@ void ReadyButton::Update()
 {
 	m_inputSystem->CheckKeyboardPressed();
 
+	if (!m_packetManager->m_2PGameRoomPacket->bOn)
+	{
+		m_packetManager->m_1PGameRoomPacket->bOwner = true;
+	}
+
+	if (!m_packetManager->m_1PGameRoomPacket->bReady ||
+		!m_packetManager->m_2PGameRoomPacket->bReady)
+	{
+		m_packetManager->m_1PGameRoomPacket->bGameStart = false;
+	}
+
 	if (m_inputSystem->IsEnterPressed())
 	{
 		PlayerReady();
@@ -30,14 +41,14 @@ void ReadyButton::Update()
 
 	if (m_inputSystem->IsLeftArrowPressed())
 	{
-		PlayerReady();
+		BackLobby();
 	}
 }
 
 void ReadyButton::BackLobby()
 {
+	m_packetManager->m_1PGameRoomPacket->userReq = USER_ROOM::ROOM_BACK_LOBBY;
 	m_packetManager->m_1PGameRoomPacket->bOn = false;
-	m_resourceManager->m_curGameStep = STEP_LOBBY;
 
 	SoundSystem::getInstance()->StartEffect(SOUND_BUTTON);
 }
@@ -52,6 +63,12 @@ void ReadyButton::PlayerReady()
 	}
 	else
 	{
+		m_packetManager->m_1PGameRoomPacket->bReady = false;
+
+		SoundSystem::getInstance()->StartEffect(SOUND_BUTTON);
+	}
+	/*else
+	{
 		if (m_packetManager->m_1PGameRoomPacket->bOwner &&
 			m_packetManager->m_2PGameRoomPacket->bReady)
 		{
@@ -59,5 +76,5 @@ void ReadyButton::PlayerReady()
 
 			SoundSystem::getInstance()->StartEffect(SOUND_BUTTON);
 		}
-	}
+	}*/
 }

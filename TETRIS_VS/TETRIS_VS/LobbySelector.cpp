@@ -61,7 +61,7 @@ void LobbySelector::Update()
 }
 void LobbySelector::ListEmpty()
 {
-	m_selectedRoom = ROOM_LIST_Y;
+	m_selectedRoom = 0;
 }
 
 void LobbySelector::MoveUp()
