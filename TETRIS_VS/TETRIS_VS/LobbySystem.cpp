@@ -25,6 +25,8 @@ void LobbySystem::Init()
 	m_resourceManager->LoadGameData(STEP_LOBBY);
 
 	m_socketManager = SocketManager::getInstance();
+	m_socketManager->m_userState = USER_STATE::USER_LOBBY;
+
 	m_packetManager = PacketManager::getInstance();
 
 	m_consoleSize = m_resourceManager->m_background.consoleSize;
@@ -43,20 +45,61 @@ void LobbySystem::Init()
 	SoundSystem::getInstance()->StartBGM(LOBBY_BGM);
 }
 
-void LobbySystem::Update()
+void LobbySystem::Update() //  게임스텝하고 유저 스테이트를 바꿔줘야한다.
 {
 	SoundSystem::getInstance()->pSystem->update();
 
-	m_socketManager->Communication(m_resourceManager->m_curGameStep);
+	m_socketManager->Communication();
+	CheckPacket();
 
-	if (m_packetManager->m_lobbyPacket->b_enterRoom)
+	if (m_resourceManager->m_curGameStep == GAME_STEP::STEP_LOBBY)
 	{
-		m_selector->Update();
+		if (m_lobbyboard->m_on)
+		{
+			m_lobbyboard->Update();
+		}
+		else
+		{
+			m_selector->Update();
+		}
 	}
-	else
+}
+
+void LobbySystem::CheckPacket()
+{
+	if (m_socketManager->m_userState == USER_STATE::CLOSE_CONNECT)
 	{
-		m_lobbyboard->Update();
+		m_packetManager->m_lobbyData->userReq = USER_LOBBY::LOBBY_BACK_MENU;
 	}
+
+	switch (m_packetManager->m_lobbyData->userReq)
+	{
+	case USER_LOBBY::LOBBY_BACK_MENU:
+		m_resourceManager->m_curGameStep = GAME_STEP::STEP_MENU;
+		break;
+	case USER_LOBBY::LOBBY_CREATE_ROOM:
+		m_packetManager->m_1PGameRoomData->bOn = true;
+		m_packetManager->m_1PGameRoomData->bOwner = true;
+		m_packetManager->m_1PGameRoomData->roomNum = m_packetManager->m_lobbyData->roomNum;
+
+		m_resourceManager->m_curGameStep = GAME_STEP::STEP_ROOM;
+		break;
+	case USER_LOBBY::LOBBY_ENTER_ROOM:
+		if (m_packetManager->m_lobbyData->bEnterRoom)
+		{
+			m_packetManager->m_1PGameRoomData->bOn = true;
+			m_packetManager->m_1PGameRoomData->roomNum = m_packetManager->m_lobbyData->roomNum;
+
+			m_resourceManager->m_curGameStep = GAME_STEP::STEP_ROOM;
+		}
+		else
+		{
+			m_lobbyboard->m_on = false;
+		}
+		break;
+	}
+
+	m_packetManager->m_lobbyData->userReq = USER_LOBBY::LOBBY_IDLE;
 }
 
 void LobbySystem::Render()
@@ -68,7 +111,7 @@ void LobbySystem::Render()
 	}
 
 	// Sprite
-	if (m_packetManager->m_lobbyPacket->b_enterRoom && !m_packetManager->m_roomList.empty())
+	if (m_lobbyboard->m_on && !m_packetManager->m_roomList.empty())
 	{
 		for (auto i : m_resourceManager->m_sprite[LOBBY_SELECTOR]->textInfo)
 		{
@@ -80,7 +123,7 @@ void LobbySystem::Render()
 		for (auto i : m_packetManager->m_roomList)
 		{
 			LOBBY listState;
-			if (i->m_userCount < 2)
+			if (i->userCount < 2)
 			{
 				listState = LOBBY::LOBBY_LIST_POSSIBLE;
 			}
@@ -94,12 +137,12 @@ void LobbySystem::Render()
 				WriteBuffer(j->xPos, j->yPos + n_count, j->strText, j->textColor);
 			}
 
-			WriteBuffer(ROOM_LIST_XPOS, ROOM_LIST_YPOS + n_count, to_string(i->m_roomNum), WHITE);
+			WriteBuffer(ROOM_LIST_XPOS, ROOM_LIST_YPOS + n_count, to_string(i->roomNum), WHITE);
 			n_count++;
 		}
 	}
 	
-	if(!m_packetManager->m_lobbyPacket->b_enterRoom)
+	if(m_lobbyboard->m_on)
 	{
 		for (auto i : m_resourceManager->m_sprite[LOBBY_FAIL_ENTER_ROOM]->textInfo)
 		{
@@ -117,7 +160,8 @@ void LobbySystem::Release()
 
 	if (m_resourceManager->m_curGameStep == STEP_MENU)
 	{
-		SocketManager::getInstance()->CleanSocket();
+		m_socketManager->CleanSocket();
 		SafeDelete(m_socketManager);
+		SafeDelete(m_packetManager);
 	}
 }

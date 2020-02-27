@@ -14,20 +14,24 @@ PacketManager* PacketManager::getInstance()
 
 PacketManager::PacketManager()
 {
-	m_lobbyPacket = new LobbyPacket;
-	m_lobbySendPacket = new LobbySendPacket;
-
-	m_1PGameRoomPacket = new GameRoomPacket;
-	m_2PGameRoomPacket = new GameRoomPacket;
+	m_packetData = new PacketData;
+	m_lobbyData = new LobbyData;
+	m_1PGameRoomData = new GameRoomData;
+	m_2PGameRoomData = new GameRoomData;
+	//m_1P_PlayGameData = new PlayGameData;
+	//m_2P_PlayGameData = new PlayGameData;
 }
 
 PacketManager::~PacketManager()
 {
-	SafeDelete(m_lobbyPacket);
-	ClearRoomList();
+	SafeDelete(m_packetData);
+	SafeDelete(m_lobbyData);
+	SafeDelete(m_1PGameRoomData);
+	SafeDelete(m_2PGameRoomData);
+	//SafeDelete(m_1P_PlayGameData);
+	//SafeDelete(m_2P_PlayGameData);
 
-	SafeDelete(m_1PGameRoomPacket);
-	SafeDelete(m_2PGameRoomPacket);
+	ClearRoomList();
 
 	Inst = nullptr;
 }
@@ -41,49 +45,90 @@ void PacketManager::ClearRoomList()
 	m_roomList.clear();
 }
 
-void PacketManager::SetLobbySendPacket(LobbySendPacket* lobbySendPacket)
+void PacketManager::SetPacket(USER_STATE userState)
 {
-	m_lobbySendPacket->lobbyPacket.b_enterRoom = lobbySendPacket->lobbyPacket.b_enterRoom;
-	m_lobbySendPacket->lobbyPacket.n_roomCount = lobbySendPacket->lobbyPacket.n_roomCount;
-	m_lobbySendPacket->lobbyPacket.n_roomNum = lobbySendPacket->lobbyPacket.n_roomNum;
-	m_lobbySendPacket->lobbyPacket.userReq = lobbySendPacket->lobbyPacket.userReq;
+	m_packetData->userState = userState;
 
-	for (int i = 0; i < m_lobbySendPacket->lobbyPacket.n_roomCount; i++)
+	switch (userState)
 	{
-		m_lobbySendPacket->gameRoom_lobby[i].m_roomNum = lobbySendPacket->gameRoom_lobby[i].m_roomNum;
-		m_lobbySendPacket->gameRoom_lobby[i].m_userCount = lobbySendPacket->gameRoom_lobby[i].m_userCount;
+	case USER_STATE::USER_LOBBY:
+		SetLobbyData();
+		break;
+	case USER_STATE::USER_GAME_ROOM:
+		SetGameRoomData();
+		break;
+	case USER_STATE::USER_PLAY_GAME:
+		SetPlayGameData();
+		break;
 	}
-
-	SetLobbyPacket();
-	SetRoomList();
 }
 
-void PacketManager::SetLobbyPacket()
+void PacketManager::SetLobbyData()
 {
-	m_lobbyPacket->b_enterRoom = m_lobbySendPacket->lobbyPacket.b_enterRoom;
-	m_lobbyPacket->n_roomCount = m_lobbySendPacket->lobbyPacket.n_roomCount;
-	m_lobbyPacket->n_roomNum = m_lobbySendPacket->lobbyPacket.n_roomNum;
-	m_lobbyPacket->userReq = m_lobbySendPacket->lobbyPacket.userReq;
+	m_packetData->size = 0;
+
+	memcpy(m_packetData->data, m_lobbyData, sizeof(LobbyData));
+	m_packetData->size += static_cast<unsigned short>(sizeof(LobbyData));
 }
 
-void PacketManager::SetRoomList()
+void PacketManager::SetGameRoomData()
 {
-	for (int i = 0; i < m_lobbyPacket->n_roomCount; i++)
+	m_packetData->size = 0;
+
+	memcpy(m_packetData->data, m_1PGameRoomData, sizeof(GameRoomData));
+	m_packetData->size += static_cast<unsigned short>(sizeof(GameRoomData));
+}
+
+void PacketManager::SetPlayGameData()
+{
+
+}
+
+void PacketManager::CopyPacket(PacketData* packetData)
+{
+	memcpy(m_packetData, packetData, sizeof(PacketData));
+}
+
+void PacketManager::GetData(USER_STATE userState)
+{
+	switch (userState)
 	{
-		GameRoom_Lobby* room = new GameRoom_Lobby;
-		room->m_roomNum = m_lobbySendPacket->gameRoom_lobby[i].m_roomNum;
-		room->m_userCount = m_lobbySendPacket->gameRoom_lobby[i].m_userCount;
+	case USER_STATE::USER_LOBBY:
+		GetLobbyData();
+		break;
+	case USER_STATE::USER_GAME_ROOM:
+		GetGameRoomData();
+		break;
+	case USER_STATE::USER_PLAY_GAME:
+		GetPlayGameData(); // ¾ÆÁ÷
+		break;
+	}
+}
 
+void PacketManager::GetLobbyData()
+{
+	ZeroMemory(m_lobbyData, sizeof(LobbyData));
+	memcpy(m_lobbyData, m_packetData->data, sizeof(LobbyData));
+}
+
+void PacketManager::GetGameRoomData()
+{
+	ZeroMemory(m_2PGameRoomData, sizeof(GameRoomData));
+	memcpy(m_2PGameRoomData, m_packetData->data, sizeof(GameRoomData));
+	int size = sizeof(GameRoomData);
+
+	ClearRoomList();
+	while (size < m_packetData->size)
+	{
+		LobbyData_GameRoom* room = new LobbyData_GameRoom;
+		memcpy(room, m_packetData->data + size, sizeof(LobbyData_GameRoom));
 		m_roomList.push_back(room);
+
+		size += sizeof(LobbyData_GameRoom);
 	}
 }
 
-void PacketManager::SetGameRoomPacket(GameRoomPacket* gameRoomPacket)
+void PacketManager::GetPlayGameData()
 {
-	m_2PGameRoomPacket->bGameStart = gameRoomPacket->bGameStart;
-	m_2PGameRoomPacket->bOn = gameRoomPacket->bOn;
-	m_2PGameRoomPacket->bOwner = gameRoomPacket->bOwner;
-	m_2PGameRoomPacket->bReady = gameRoomPacket->bReady;
-	m_2PGameRoomPacket->userNum = gameRoomPacket->userNum;
-	m_2PGameRoomPacket->userReq = gameRoomPacket->userReq;
+	//ZeroMemory(m_gameRoomData, sizeof(GameRoomData));
 }

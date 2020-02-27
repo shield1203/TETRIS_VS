@@ -2,6 +2,7 @@
 class ResourceManager;
 class SocketManager;
 class PacketManager;
+
 class SelectorFrame;
 class LobbyBoard;
 
@@ -19,6 +20,7 @@ private:
 public:
 	virtual void Init();
 	virtual void Update();
+	void CheckPacket();
 	virtual void Render();
 	virtual void Release();
 

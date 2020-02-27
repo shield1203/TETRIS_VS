@@ -27,7 +27,7 @@ void LobbySelector::Update()
 {
 	m_inputSystem->CheckKeyboardPressed();
 
-	if (m_packetManager->m_roomList.size() != 0)
+	if (!m_packetManager->m_roomList.empty())
 	{
 		if (m_inputSystem->IsUpArrowPressed())
 		{
@@ -112,14 +112,14 @@ void LobbySelector::BackMenu()
 
 void LobbySelector::ReqeatEnterRoom()
 {
-	m_packetManager->m_lobbyPacket->userReq = USER_LOBBY::LOBBY_ENTER_ROOM;
+	m_packetManager->m_lobbyData->userReq = USER_LOBBY::LOBBY_ENTER_ROOM;
 
 	int roomNum = 0;
 	for (auto i : m_packetManager->m_roomList)
 	{
 		if (roomNum == m_selectedRoom)
 		{
-			m_packetManager->m_lobbyPacket->n_roomNum = i->m_roomNum;
+			m_packetManager->m_lobbyData->roomNum = i->roomNum;
 			break;
 		}
 		roomNum++;
@@ -128,5 +128,5 @@ void LobbySelector::ReqeatEnterRoom()
 
 void LobbySelector::ReqestCreateRoom()
 {
-	m_packetManager->m_lobbyPacket->userReq = USER_LOBBY::LOBBY_CREATE_ROOM;
+	m_packetManager->m_lobbyData->userReq = USER_LOBBY::LOBBY_CREATE_ROOM;
 }

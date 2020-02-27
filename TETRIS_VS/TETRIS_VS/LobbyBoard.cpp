@@ -21,6 +21,6 @@ void LobbyBoard::Update()
 
 	if (m_inputSystem->IsEnterPressed())
 	{
-		m_packetManager->m_lobbyPacket->b_enterRoom = true;
+		m_on = true;
 	}
 }

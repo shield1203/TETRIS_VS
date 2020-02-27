@@ -450,10 +450,10 @@
     </SpriteData>
     <SpriteData num="2">
       <TextInfo xPos="42" yPos="5" color="14">¡ä</TextInfo>
-      <TextInfo xPos="40" yPos="5" color="14">¢¹¡Ü¢·</TextInfo>
-      <TextInfo xPos="42" yPos="6" color="14">¡à</TextInfo>
+      <TextInfo xPos="40" yPos="6" color="14">¢¹¡Ü¢·</TextInfo>
       <TextInfo xPos="42" yPos="7" color="14">¡à</TextInfo>
-      <TextInfo xPos="40" yPos="8" color="14">¡à¡à¡à</TextInfo>
+      <TextInfo xPos="42" yPos="8" color="14">¡à</TextInfo>
+      <TextInfo xPos="40" yPos="9" color="14">¡à¡à¡à</TextInfo>
     </SpriteData>
     <SpriteData num="3">
       <TextInfo xPos="6" yPos="11" color="10">¢ÂREADY</TextInfo>

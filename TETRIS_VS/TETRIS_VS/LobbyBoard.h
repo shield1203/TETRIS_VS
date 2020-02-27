@@ -8,6 +8,8 @@ private:
 	InputSystem* m_inputSystem = nullptr;
 	PacketManager* m_packetManager = nullptr;
 public:
+	bool m_on = false;
+public:
 	void Update();
 
 	LobbyBoard();
