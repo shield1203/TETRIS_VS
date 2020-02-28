@@ -23,9 +23,12 @@ void LobbySystem::Init()
 {
 	m_resourceManager = ResourceManager::getInstance();
 	m_resourceManager->LoadGameData(STEP_LOBBY);
-
+ 
 	m_socketManager = SocketManager::getInstance();
-	m_socketManager->m_userState = USER_STATE::USER_LOBBY;
+	if (m_socketManager->m_userState != USER_STATE::CLOSE_CONNECT)
+	{
+		m_socketManager->m_userState = USER_STATE::USER_LOBBY;
+	}
 
 	m_packetManager = PacketManager::getInstance();
 
@@ -78,8 +81,10 @@ void LobbySystem::CheckPacket()
 		m_resourceManager->m_curGameStep = GAME_STEP::STEP_MENU;
 		break;
 	case USER_LOBBY::LOBBY_CREATE_ROOM:
+		m_packetManager->m_1PGameRoomData->userReq = USER_ROOM::ROOM_IDLE;
 		m_packetManager->m_1PGameRoomData->bOn = true;
 		m_packetManager->m_1PGameRoomData->bOwner = true;
+		m_packetManager->m_1PGameRoomData->bReady = false;
 		m_packetManager->m_1PGameRoomData->roomNum = m_packetManager->m_lobbyData->roomNum;
 
 		m_resourceManager->m_curGameStep = GAME_STEP::STEP_ROOM;
@@ -87,7 +92,9 @@ void LobbySystem::CheckPacket()
 	case USER_LOBBY::LOBBY_ENTER_ROOM:
 		if (m_packetManager->m_lobbyData->bEnterRoom)
 		{
+			m_packetManager->m_1PGameRoomData->userReq = USER_ROOM::ROOM_IDLE;
 			m_packetManager->m_1PGameRoomData->bOn = true;
+			m_packetManager->m_1PGameRoomData->bReady = false;
 			m_packetManager->m_1PGameRoomData->roomNum = m_packetManager->m_lobbyData->roomNum;
 
 			m_resourceManager->m_curGameStep = GAME_STEP::STEP_ROOM;

@@ -18,6 +18,7 @@ private:
 public:
 	virtual void Init();
 	virtual void Update();
+	void CheckPacket();
 	virtual void Render();
 	virtual void Release();
 

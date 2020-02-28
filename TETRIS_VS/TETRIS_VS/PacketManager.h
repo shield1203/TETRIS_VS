@@ -23,7 +23,7 @@ struct LobbyData_GameRoom
 };
 
 // GameRoom
-enum class USER_ROOM : unsigned int { ROOM_IDLE, ROOM_BACK_LOBBY, ROOM_GAME_START };
+enum class USER_ROOM : unsigned int { ROOM_IDLE, ROOM_BACK_LOBBY, ROOM_GAME_START, ROOM_BACK_MENU };
 
 struct GameRoomData
 {
@@ -32,7 +32,6 @@ struct GameRoomData
 	bool bOn = false;
 	bool bOwner = false;
 	bool bReady = false;
-	bool bGameStart = false;
 };
 
 // PlayGame

@@ -16,7 +16,6 @@ SocketManager* SocketManager::getInstance()
 
 SocketManager::SocketManager()
 {
-	m_userState = USER_STATE::USER_LOBBY;
 	m_packetManager = PacketManager::getInstance();
 
 	WSAStartup(MAKEWORD(2, 2), &wsadata);
@@ -64,7 +63,7 @@ void SocketManager::Communication()
 
 void SocketManager::Send()
 {
-	m_packetManager->SetPacket(m_userState);
+ 	m_packetManager->SetPacket(m_userState);
 	send(m_sock, (char*)m_packetManager->m_packetData, sizeof(PacketData), 0);
 }
 

@@ -1,2 +1,13 @@
-﻿  PacketManager.cpp
+﻿  GameRoomSystem.cpp
+  GameSystem.cpp
+  LobbyBoard.cpp
+  LobbySelector.cpp
+F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\LobbySelector.cpp(88,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  LobbySystem.cpp
+  PacketManager.cpp
+  ReadyButton.cpp
+  SocketManager.cpp
+F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\SocketManager.cpp(49,1): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1831): message : 'inet_addr' 선언을 참조하십시오.
+  코드를 생성하고 있습니다...
   TETRIS_VS.vcxproj -> F:\TETRIS_VS\TETRIS_VS\Debug\TETRIS_VS.exe

@@ -21,17 +21,11 @@ ReadyButton::~ReadyButton()
 
 void ReadyButton::Update()
 {
-	/*m_inputSystem->CheckKeyboardPressed();
+	m_inputSystem->CheckKeyboardPressed();
 
-	if (!m_packetManager->m_2PGameRoomPacket->bOn)
+	if (!m_packetManager->m_2PGameRoomData->bOn)
 	{
-		m_packetManager->m_1PGameRoomPacket->bOwner = true;
-	}
-
-	if (!m_packetManager->m_1PGameRoomPacket->bReady ||
-		!m_packetManager->m_2PGameRoomPacket->bReady)
-	{
-		m_packetManager->m_1PGameRoomPacket->bGameStart = false;
+		m_packetManager->m_1PGameRoomData->bOwner = true;
 	}
 
 	if (m_inputSystem->IsEnterPressed())
@@ -42,39 +36,35 @@ void ReadyButton::Update()
 	if (m_inputSystem->IsLeftArrowPressed())
 	{
 		BackLobby();
-	}*/
+	}
 }
 
 void ReadyButton::BackLobby()
 {
-	/*m_packetManager->m_1PGameRoomPacket->userReq = USER_ROOM::ROOM_BACK_LOBBY;
-	m_packetManager->m_1PGameRoomPacket->bOn = false;*/
+	m_packetManager->m_1PGameRoomData->userReq = USER_ROOM::ROOM_BACK_LOBBY;
 
 	SoundSystem::getInstance()->StartEffect(SOUND_BUTTON);
 }
 
 void ReadyButton::PlayerReady()
 {
-	//if (!m_packetManager->m_1PGameRoomPacket->bReady)
-	//{
-	//	m_packetManager->m_1PGameRoomPacket->bReady = true;
+	if (!m_packetManager->m_1PGameRoomData->bReady)
+	{
+		m_packetManager->m_1PGameRoomData->bReady = true;
 
-	//	SoundSystem::getInstance()->StartEffect(SOUND_BUTTON);
-	//}
-	//else
-	//{
-	//	m_packetManager->m_1PGameRoomPacket->bReady = false;
+		SoundSystem::getInstance()->StartEffect(SOUND_BUTTON);
+	}
+	else
+	{
+		if (m_packetManager->m_1PGameRoomData->bOwner && m_packetManager->m_2PGameRoomData->bReady)
+		{
+			m_packetManager->m_1PGameRoomData->userReq = USER_ROOM::ROOM_GAME_START;
+		}
+		else
+		{
+			m_packetManager->m_1PGameRoomData->bReady = false;
+		}
 
-	//	SoundSystem::getInstance()->StartEffect(SOUND_BUTTON);
-	//}
-	///*else
-	//{
-	//	if (m_packetManager->m_1PGameRoomPacket->bOwner &&
-	//		m_packetManager->m_2PGameRoomPacket->bReady)
-	//	{
-	//		m_packetManager->m_1PGameRoomPacket->bGameStart = true;
-
-	//		SoundSystem::getInstance()->StartEffect(SOUND_BUTTON);
-	//	}
-	//}*/
+		SoundSystem::getInstance()->StartEffect(SOUND_BUTTON);
+	}
 }
