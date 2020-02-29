@@ -76,7 +76,7 @@ void SocketManager::Recv()
 	{
 		msg[sizeof(PacketData)] = '\0';
 		PacketData* packetData = (PacketData*)msg;
-
+		
 		m_packetManager->CopyPacket(packetData);
 		m_packetManager->GetData(m_userState);
 	}

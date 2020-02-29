@@ -5,7 +5,7 @@ class PacketManager;
 
 class ReadyButton;
 
-enum ROOM_NUM { ROOM_NUM_YPOS = 2, ROOM_NUM_XPOS = 8 };
+enum ROOM_NUM { ROOM_NUM_YPOS = 2, ROOM_NUM_XPOS = 10 };
 
 class GameRoomSystem : public SystemFrame
 {

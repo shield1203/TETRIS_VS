@@ -48,7 +48,7 @@ void LobbySystem::Init()
 	SoundSystem::getInstance()->StartBGM(LOBBY_BGM);
 }
 
-void LobbySystem::Update() //  게임스텝하고 유저 스테이트를 바꿔줘야한다.
+void LobbySystem::Update()
 {
 	SoundSystem::getInstance()->pSystem->update();
 
@@ -118,7 +118,7 @@ void LobbySystem::Render()
 	}
 
 	// Sprite
-	if (m_lobbyboard->m_on && !m_packetManager->m_roomList.empty())
+	if (!m_lobbyboard->m_on && !m_packetManager->m_roomList.empty())
 	{
 		for (auto i : m_resourceManager->m_sprite[LOBBY_SELECTOR]->textInfo)
 		{

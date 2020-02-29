@@ -85,7 +85,7 @@ void LobbySelector::MoveDown()
 {
 	auto selector = m_resourceManager->m_sprite[LOBBY_SELECTOR]->textInfo.front();
 
-	if (selector->yPos < ROOM_LIST_Y + m_packetManager->m_roomList.size())
+	if (selector->yPos < ROOM_LIST_Y + m_packetManager->m_roomList.size() - 1)
 	{
 		m_selectedRoom += 1;
 

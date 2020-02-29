@@ -109,13 +109,8 @@ void PacketManager::GetLobbyData()
 {
 	ZeroMemory(m_lobbyData, sizeof(LobbyData));
 	memcpy(m_lobbyData, m_packetData->data, sizeof(LobbyData));
-}
 
-void PacketManager::GetGameRoomData()
-{
-	ZeroMemory(m_2PGameRoomData, sizeof(GameRoomData));
-	memcpy(m_2PGameRoomData, m_packetData->data, sizeof(GameRoomData));
-	int size = sizeof(GameRoomData);
+	int size = sizeof(LobbyData);
 
 	ClearRoomList();
 	while (size < m_packetData->size)
@@ -126,6 +121,12 @@ void PacketManager::GetGameRoomData()
 
 		size += sizeof(LobbyData_GameRoom);
 	}
+}
+
+void PacketManager::GetGameRoomData()
+{
+	ZeroMemory(m_2PGameRoomData, sizeof(GameRoomData));
+	memcpy(m_2PGameRoomData, m_packetData->data, sizeof(GameRoomData));
 }
 
 void PacketManager::GetPlayGameData()
