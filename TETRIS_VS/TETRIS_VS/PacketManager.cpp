@@ -114,15 +114,18 @@ void PacketManager::SetPlayGameData()
 
 	for (auto map : ResourceManager::getInstance()->m_map)
 	{
-		PlayGameData_Block* addBlock = new PlayGameData_Block;
-		addBlock->xPos = map->xPos;
-		addBlock->yPos = map->yPos;
-		addBlock->textColor = map->textColor;
-		memcpy(m_packetData->data + m_packetData->size, addBlock, sizeof(PlayGameData_Block));
-		
-		m_packetData->size += static_cast<unsigned short>(sizeof(PlayGameData_Block));
+		if (map->strText == "бс")
+		{
+			PlayGameData_Block* addBlock = new PlayGameData_Block;
+			addBlock->xPos = map->xPos;
+			addBlock->yPos = map->yPos;
+			addBlock->textColor = map->textColor;
+			memcpy(m_packetData->data + m_packetData->size, addBlock, sizeof(PlayGameData_Block));
 
-		SafeDelete(addBlock);
+			m_packetData->size += static_cast<unsigned short>(sizeof(PlayGameData_Block));
+
+			SafeDelete(addBlock);
+		}
 	}
 }
 

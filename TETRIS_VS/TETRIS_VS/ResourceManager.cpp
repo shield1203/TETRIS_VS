@@ -200,12 +200,29 @@ void ResourceManager::ReleaseData(GAME_STEP prevGameStep)
 	{
 	case STEP_SINGLE_PLAY:
 		// Single Play ///////////////////////////////
-		
 		for (auto i : m_map)
 		{
 			SafeDelete(i);
 		}
 		m_map.clear();
+		break;
+	case STEP_VERSUS_PLAY:
+		for (auto i : m_map)
+		{
+			SafeDelete(i);
+		}
+		m_map.clear();
+
+		for (auto i : m_sprite)
+		{
+			for (auto j : i->textInfo)
+			{
+				SafeDelete(j);
+			}
+			i->textInfo.clear();
+			SafeDelete(i);
+		}
+		m_sprite.clear();
 		break;
 	default:
 		for (auto i : m_sprite)

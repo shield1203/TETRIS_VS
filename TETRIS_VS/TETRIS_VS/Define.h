@@ -3,8 +3,8 @@ extern HANDLE g_screenBuffer[2];
 extern short g_bufferIndex;
 
 #define PORT_NUM 21524
-#define MAX_MSG_LEN 2330
-#define MAX_DATA_LEN 2316 // 테트리스에서 최대 블록 개수일 때 데이터크기
+#define MAX_MSG_LEN 2937
+#define MAX_DATA_LEN 2929 // 테트리스에서 최대 블록 개수일 때 데이터크기
 #define SERVER_IP "203.232.193.170" // 연구실 내 컴자리
 
 /////////////
