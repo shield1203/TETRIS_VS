@@ -35,9 +35,18 @@ struct GameRoomData
 };
 
 // PlayGame
+enum class USER_PLAY : unsigned int { PLAY_IDLE, PLAY_LOSE, PLAY_WIN, RESULT_BACK_ROOM };
+
 struct PlayGameData
 {
+	USER_PLAY userReq = USER_PLAY::PLAY_IDLE;
+};
 
+struct PlayGameData_Block
+{
+	int xPos = 0;
+	int yPos = 0;
+	COLOR textColor = WHITE;
 };
 
 class PacketManager
@@ -51,20 +60,24 @@ public:
 	LobbyData* m_lobbyData = nullptr;
 	GameRoomData* m_1PGameRoomData = nullptr;
 	GameRoomData* m_2PGameRoomData = nullptr;
-	//PlayGameData* m_1P_PlayGameData = nullptr;
-	//PlayGameData* m_2P_PlayGameData = nullptr;
+	PlayGameData* m_1P_PlayGameData = nullptr;
+	PlayGameData* m_2P_PlayGameData = nullptr;
+
+	list<PlayGameData_Block*> m_2PBlockList;
 
 	list<LobbyData_GameRoom*>m_roomList;
 public:
 	static PacketManager* getInstance();
 
 	void ClearRoomList();
+	void ClearBlockList();
 
 	// Send
 	void SetPacket(USER_STATE);
 	void SetLobbyData();
 	void SetGameRoomData();
 	void SetPlayGameData();
+	void SetPlayResultData();
 
 	// Recv
 	void CopyPacket(PacketData*);
@@ -72,6 +85,7 @@ public:
 	void GetLobbyData();
 	void GetGameRoomData();
 	void GetPlayGameData();
+	void GetPlayResultData();
 
 	~PacketManager();
 };

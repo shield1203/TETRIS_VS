@@ -97,6 +97,12 @@
     <Filter Include="03.Systems\05.GameRoomSystem\00.ReadyButton">
       <UniqueIdentifier>{b2df8a15-b4fc-4c14-931b-f478eb4a37ce}</UniqueIdentifier>
     </Filter>
+    <Filter Include="03.Systems\06.VersusPlaySystem">
+      <UniqueIdentifier>{c3457b05-5930-42e5-ad40-2e87d0da2637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\06.VersusPlaySystem\00.Result">
+      <UniqueIdentifier>{f60865fc-ebf1-4e4c-bc9d-52ad77c4ac47}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Define.h">
@@ -183,6 +189,12 @@
     <ClInclude Include="ReadyButton.h">
       <Filter>03.Systems\05.GameRoomSystem\00.ReadyButton</Filter>
     </ClInclude>
+    <ClInclude Include="VersusPalySystem.h">
+      <Filter>03.Systems\06.VersusPlaySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Result.h">
+      <Filter>03.Systems\06.VersusPlaySystem\00.Result</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameSystem.cpp">
@@ -265,6 +277,12 @@
     </ClCompile>
     <ClCompile Include="ReadyButton.cpp">
       <Filter>03.Systems\05.GameRoomSystem\00.ReadyButton</Filter>
+    </ClCompile>
+    <ClCompile Include="VersusPalySystem.cpp">
+      <Filter>03.Systems\06.VersusPlaySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Result.cpp">
+      <Filter>03.Systems\06.VersusPlaySystem\00.Result</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

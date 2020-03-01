@@ -142,6 +142,7 @@
     <ClInclude Include="ReadyButton.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="MenuSelector.h" />
+    <ClInclude Include="Result.h" />
     <ClInclude Include="SelectorFrame.h" />
     <ClInclude Include="SinglePlaySystem.h" />
     <ClInclude Include="SocketManager.h" />
@@ -151,6 +152,7 @@
     <ClInclude Include="tinystr.h" />
     <ClInclude Include="tinyxml.h" />
     <ClInclude Include="Title.h" />
+    <ClInclude Include="VersusPalySystem.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Block.cpp" />
@@ -170,6 +172,7 @@
     <ClCompile Include="ReadyButton.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="MenuSelector.cpp" />
+    <ClCompile Include="Result.cpp" />
     <ClCompile Include="SelectorFrame.cpp" />
     <ClCompile Include="SinglePlaySystem.cpp" />
     <ClCompile Include="SocketManager.cpp" />
@@ -180,6 +183,7 @@
     <ClCompile Include="tinyxmlerror.cpp" />
     <ClCompile Include="tinyxmlparser.cpp" />
     <ClCompile Include="Title.cpp" />
+    <ClCompile Include="VersusPalySystem.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

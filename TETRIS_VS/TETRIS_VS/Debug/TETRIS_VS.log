@@ -1,3 +1,45 @@
-﻿  LobbySelector.cpp
+﻿  Block.cpp
+  Button.cpp
+  GameOverSystem.cpp
+  GameStart.cpp
+  GameRoomSystem.cpp
+  GameSystem.cpp
+  InputSystem.cpp
+F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\InputSystem.cpp(14,1): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _kbhit. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\conio.h(459): message : 'kbhit' 선언을 참조하십시오.
+F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\InputSystem.cpp(16,1): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\conio.h(453): message : 'getch' 선언을 참조하십시오.
+F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\InputSystem.cpp(20,1): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\conio.h(453): message : 'getch' 선언을 참조하십시오.
+  LobbyBoard.cpp
+  LobbySelector.cpp
 F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\LobbySelector.cpp(88,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  LobbySystem.cpp
+  Map.cpp
+  MenuSystem.cpp
+  MenuList.cpp
+  PacketManager.cpp
+  ReadyButton.cpp
+  ResourceManager.cpp
+  MenuSelector.cpp
+  Result.cpp
+  SelectorFrame.cpp
+F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\DefineFuntion.h(9,1): warning C4150: 불완전한 형식 'InputSystem'에 대한 포인터를 삭제했습니다. 소멸자가 호출되지 않습니다.
+F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\SelectorFrame.h(3): message : 'InputSystem' 선언을 참조하십시오.
+F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\SelectorFrame.cpp(10): message : 컴파일되는 함수 템플릿 인스턴스화 'void SafeDelete<InputSystem>(T *&)'에 대한 참조를 확인하세요.
+          with
+          [
+              T=InputSystem
+          ]
+  SinglePlaySystem.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  SocketManager.cpp
+F:\TETRIS_VS\TETRIS_VS\TETRIS_VS\SocketManager.cpp(49,1): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1831): message : 'inet_addr' 선언을 참조하십시오.
+  SoundSystem.cpp
+  SystemFrame.cpp
+  Title.cpp
+  VersusPalySystem.cpp
+  코드를 생성하고 있습니다...
   TETRIS_VS.vcxproj -> F:\TETRIS_VS\TETRIS_VS\Debug\TETRIS_VS.exe

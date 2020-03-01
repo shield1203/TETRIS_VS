@@ -7,6 +7,7 @@
 #include "GameOverSystem.h"
 #include "LobbySystem.h"
 #include "GameRoomSystem.h"
+#include "VersusPalySystem.h"
 
 #include "ResourceManager.h"
 #include "SoundSystem.h"
@@ -64,6 +65,10 @@ void GameSystem::Init()
 			break;
 		case STEP_ROOM:
 			m_systemFrame = new GameRoomSystem();
+			break;
+		case STEP_VERSUS_PLAY:
+			m_systemFrame = new VersusPalySystem();
+			break;
 		}
 
 		m_systemFrame->Init();

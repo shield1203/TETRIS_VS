@@ -2,14 +2,14 @@
 #include "SystemFrame.h"
 #include "LobbySystem.h"
 
-#include "SelectorFrame.h"
-#include "LobbySelector.h"
-#include "LobbyBoard.h"
-
 #include "ResourceManager.h"
 #include "SocketManager.h"
 #include "PacketManager.h"
 #include "SoundSystem.h"
+
+#include "SelectorFrame.h"
+#include "LobbySelector.h"
+#include "LobbyBoard.h"
 
 LobbySystem::LobbySystem()
 {
@@ -94,6 +94,7 @@ void LobbySystem::CheckPacket()
 		{
 			m_packetManager->m_1PGameRoomData->userReq = USER_ROOM::ROOM_IDLE;
 			m_packetManager->m_1PGameRoomData->bOn = true;
+			m_packetManager->m_1PGameRoomData->bOwner = false;
 			m_packetManager->m_1PGameRoomData->bReady = false;
 			m_packetManager->m_1PGameRoomData->roomNum = m_packetManager->m_lobbyData->roomNum;
 

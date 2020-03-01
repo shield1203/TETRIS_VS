@@ -52,6 +52,8 @@ void ResourceManager::LoadBackgroundData(GAME_STEP gameStep)
 	case STEP_ROOM:
 		strElemnt = "GameRoomSystem";
 		break;
+	case STEP_VERSUS_PLAY:
+		strElemnt = "VersusPlaySystem";
 	}
 
 	TiXmlDocument doc;
@@ -120,6 +122,8 @@ void ResourceManager::LoadSpriteData(GAME_STEP gameStep)
 	case STEP_ROOM:
 		strElemnt = "GameRoomSystem";
 		break;
+	case STEP_VERSUS_PLAY:
+		strElemnt = "VersusPlaySystem";
 	}
 
 	TiXmlDocument doc;

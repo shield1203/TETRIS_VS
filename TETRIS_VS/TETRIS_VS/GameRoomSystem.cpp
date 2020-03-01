@@ -77,6 +77,7 @@ void GameRoomSystem::CheckPacket()
 
 	if (m_packetManager->m_2PGameRoomData->userReq == USER_ROOM::ROOM_GAME_START)
 	{
+		m_packetManager->m_1PGameRoomData->bReady = false;
 		m_resourceManager->m_curGameStep = GAME_STEP::STEP_VERSUS_PLAY;
 	}
 

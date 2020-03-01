@@ -1,5 +1,4 @@
 #pragma once
-class SystemFrame;
 class ResourceManager;
 class Button;
 

@@ -1,5 +1,4 @@
 #pragma once
-class SystmeFrame;
 class ResourceManager;
 
 class Title;

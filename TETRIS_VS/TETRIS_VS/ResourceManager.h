@@ -42,8 +42,6 @@ public:
 
 	vector<Sprite*> m_sprite;
 
-	// SinglePlay
-
 	// Game
 	BlockInfo m_block;
 	BlockInfo m_nextBlock;

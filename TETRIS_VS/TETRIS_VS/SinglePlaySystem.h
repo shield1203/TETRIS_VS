@@ -1,6 +1,7 @@
 #pragma once
 class SystemFrame;
 class ResourceManager;
+
 class Map;
 class Block;
 

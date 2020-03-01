@@ -60,9 +60,12 @@ void Map::CheckLines()
 	}
 
 	// 게임오버 검사
-	if (m_blockCount[OVER_LINE])
+	if (m_resourceManager->m_curGameStep == STEP_SINGLE_PLAY)
 	{
-		m_resourceManager->m_curGameStep = STEP_GAMEOVER;
+		if (m_blockCount[OVER_LINE])
+		{
+			m_resourceManager->m_curGameStep = STEP_GAMEOVER;
+		}
 	}
 }
 
