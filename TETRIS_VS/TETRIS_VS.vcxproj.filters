@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="00.Define">
+      <UniqueIdentifier>{aa4486d0-028f-401f-8383-97389e9807eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameSystem">
+      <UniqueIdentifier>{cb1890b0-8ecf-4e48-8289-dd69e8115dbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems">
+      <UniqueIdentifier>{aafd5c9a-9c42-4ad3-b8df-09dd8101b6dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\01.MenuSystem">
+      <UniqueIdentifier>{4be880a5-9503-4e59-924e-b5c2cab8210e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\XMLparser">
+      <UniqueIdentifier>{3de789f7-314e-4caf-8c7e-d11ae493fe46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\01.MenuSystem\01.Title">
+      <UniqueIdentifier>{a0a78968-730d-4118-8e44-3316c5107841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\02.SinglePlaySystem">
+      <UniqueIdentifier>{a9bdd191-4d99-4660-be76-f7d40a193f10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\01.MenuSystem\03.MenuList">
+      <UniqueIdentifier>{3070059a-0803-459c-a7e8-0da72e3f6305}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\02.SinglePlaySystem\00.Map">
+      <UniqueIdentifier>{f2836811-b41e-44b2-a815-bb4be185814e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\02.SinglePlaySystem\01.Block">
+      <UniqueIdentifier>{ea1a5fa6-3c84-4aa9-9481-90cadc747e63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Utility">
+      <UniqueIdentifier>{cb467f38-95c0-4b4f-8df4-7f1ae1ccfccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Utility\00.SoundSystem">
+      <UniqueIdentifier>{3202ce5f-e2f1-41eb-ad3c-f244007f2ab1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Utility\01.ResourceManager">
+      <UniqueIdentifier>{f66814a0-e397-40cb-bfda-1bf4c7ca8200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Utility\02.InputSystem">
+      <UniqueIdentifier>{f414d378-4f12-4262-b7f5-931cd0466e9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\03.GameOverSystem">
+      <UniqueIdentifier>{6b65abba-44d0-402c-8946-2f279d8e1197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\03.GameOverSystem\00.Button">
+      <UniqueIdentifier>{c169e50e-332a-47dc-bca5-5d938ab582a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\04.LobbySystem">
+      <UniqueIdentifier>{5e24f764-0ce0-4d76-8f1b-7146e5b78438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Utility\03.SocketManager">
+      <UniqueIdentifier>{7231aad3-8efd-4367-b67d-922b95d2a32d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Utility\04.PacketManager">
+      <UniqueIdentifier>{95d85c90-51e4-4510-b3b9-0fc4732d4f67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameStart">
+      <UniqueIdentifier>{5ddfce17-43d9-4c53-8629-a5e970a32085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\01.MenuSystem\02.MenuSelector">
+      <UniqueIdentifier>{86c312fb-4d0f-4187-8072-fbd7036f6d04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\00.Frame">
+      <UniqueIdentifier>{5d0558a3-4186-46c3-9456-19e014a2932b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\00.Frame\00.SystemFrame">
+      <UniqueIdentifier>{4b56ebb5-b4ef-4ed0-b761-81fc016e8777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\00.Frame\01.SelectorFrame">
+      <UniqueIdentifier>{70e0649b-9dc9-4816-a120-28983080875d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\04.LobbySystem\00.LobbySelector">
+      <UniqueIdentifier>{a81f5988-299c-4098-9308-ac398cd378a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\04.LobbySystem\01.LobbyBoard">
+      <UniqueIdentifier>{ffdf8af4-129c-47bb-a21f-0073e49909ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\05.GameRoomSystem">
+      <UniqueIdentifier>{f2e53b77-5aee-49d8-9ddb-b41c94fd8b9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\05.GameRoomSystem\00.ReadyButton">
+      <UniqueIdentifier>{b2df8a15-b4fc-4c14-931b-f478eb4a37ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\06.VersusPlaySystem">
+      <UniqueIdentifier>{c3457b05-5930-42e5-ad40-2e87d0da2637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Systems\06.VersusPlaySystem\00.Result">
+      <UniqueIdentifier>{f60865fc-ebf1-4e4c-bc9d-52ad77c4ac47}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Define.h">
+      <Filter>00.Define</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSystem.h">
+      <Filter>02.GameSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="DefineEnum.h">
+      <Filter>00.Define</Filter>
+    </ClInclude>
+    <ClInclude Include="DefineFuntion.h">
+      <Filter>00.Define</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuSystem.h">
+      <Filter>03.Systems\01.MenuSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>04.Utility\01.ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="tinystr.h">
+      <Filter>헤더 파일\XMLparser</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml.h">
+      <Filter>헤더 파일\XMLparser</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Title.h">
+      <Filter>03.Systems\01.MenuSystem\01.Title</Filter>
+    </ClInclude>
+    <ClInclude Include="SinglePlaySystem.h">
+      <Filter>03.Systems\02.SinglePlaySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuList.h">
+      <Filter>03.Systems\01.MenuSystem\03.MenuList</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>03.Systems\02.SinglePlaySystem\01.Block</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>03.Systems\02.SinglePlaySystem\00.Map</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundSystem.h">
+      <Filter>04.Utility\00.SoundSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
+      <Filter>04.Utility\02.InputSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverSystem.h">
+      <Filter>03.Systems\03.GameOverSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>03.Systems\03.GameOverSystem\00.Button</Filter>
+    </ClInclude>
+    <ClInclude Include="LobbySystem.h">
+      <Filter>03.Systems\04.LobbySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketManager.h">
+      <Filter>04.Utility\03.SocketManager</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketManager.h">
+      <Filter>04.Utility\04.PacketManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemFrame.h">
+      <Filter>03.Systems\00.Frame\00.SystemFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectorFrame.h">
+      <Filter>03.Systems\00.Frame\01.SelectorFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuSelector.h">
+      <Filter>03.Systems\01.MenuSystem\02.MenuSelector</Filter>
+    </ClInclude>
+    <ClInclude Include="LobbySelector.h">
+      <Filter>03.Systems\04.LobbySystem\00.LobbySelector</Filter>
+    </ClInclude>
+    <ClInclude Include="LobbyBoard.h">
+      <Filter>03.Systems\04.LobbySystem\01.LobbyBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="GameRoomSystem.h">
+      <Filter>03.Systems\05.GameRoomSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadyButton.h">
+      <Filter>03.Systems\05.GameRoomSystem\00.ReadyButton</Filter>
+    </ClInclude>
+    <ClInclude Include="VersusPalySystem.h">
+      <Filter>03.Systems\06.VersusPlaySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Result.h">
+      <Filter>03.Systems\06.VersusPlaySystem\00.Result</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameSystem.cpp">
+      <Filter>02.GameSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuSystem.cpp">
+      <Filter>03.Systems\01.MenuSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>04.Utility\01.ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlparser.cpp">
+      <Filter>헤더 파일\XMLparser</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlerror.cpp">
+      <Filter>헤더 파일\XMLparser</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml.cpp">
+      <Filter>헤더 파일\XMLparser</Filter>
+    </ClCompile>
+    <ClCompile Include="tinystr.cpp">
+      <Filter>헤더 파일\XMLparser</Filter>
+    </ClCompile>
+    <ClCompile Include="Title.cpp">
+      <Filter>03.Systems\01.MenuSystem\01.Title</Filter>
+    </ClCompile>
+    <ClCompile Include="SinglePlaySystem.cpp">
+      <Filter>03.Systems\02.SinglePlaySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuList.cpp">
+      <Filter>03.Systems\01.MenuSystem\03.MenuList</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>03.Systems\02.SinglePlaySystem\01.Block</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>03.Systems\02.SinglePlaySystem\00.Map</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundSystem.cpp">
+      <Filter>04.Utility\00.SoundSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystem.cpp">
+      <Filter>04.Utility\02.InputSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOverSystem.cpp">
+      <Filter>03.Systems\03.GameOverSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>03.Systems\03.GameOverSystem\00.Button</Filter>
+    </ClCompile>
+    <ClCompile Include="LobbySystem.cpp">
+      <Filter>03.Systems\04.LobbySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketManager.cpp">
+      <Filter>04.Utility\03.SocketManager</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketManager.cpp">
+      <Filter>04.Utility\04.PacketManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemFrame.cpp">
+      <Filter>03.Systems\00.Frame\00.SystemFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectorFrame.cpp">
+      <Filter>03.Systems\00.Frame\01.SelectorFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuSelector.cpp">
+      <Filter>03.Systems\01.MenuSystem\02.MenuSelector</Filter>
+    </ClCompile>
+    <ClCompile Include="LobbySelector.cpp">
+      <Filter>03.Systems\04.LobbySystem\00.LobbySelector</Filter>
+    </ClCompile>
+    <ClCompile Include="LobbyBoard.cpp">
+      <Filter>03.Systems\04.LobbySystem\01.LobbyBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="GameRoomSystem.cpp">
+      <Filter>03.Systems\05.GameRoomSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStart.cpp">
+      <Filter>01.GameStart</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadyButton.cpp">
+      <Filter>03.Systems\05.GameRoomSystem\00.ReadyButton</Filter>
+    </ClCompile>
+    <ClCompile Include="VersusPalySystem.cpp">
+      <Filter>03.Systems\06.VersusPlaySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Result.cpp">
+      <Filter>03.Systems\06.VersusPlaySystem\00.Result</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

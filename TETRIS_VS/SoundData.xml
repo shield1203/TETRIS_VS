@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<Sound>
+  <BGM count="3">
+    <SoundPath>Sound\\Menu_BGM.mp3</SoundPath>
+    <SoundPath>Sound\\TETRIS_BGM.wav</SoundPath>
+    <SoundPath>Sound\\Lobby_BGM.mp3</SoundPath>
+  </BGM>
+  
+  <Effect count="5">
+    <SoundPath>Sound\\Button.wav</SoundPath>
+    <SoundPath>Sound\\Block.wav</SoundPath>
+    <SoundPath>Sound\\DropBlock.wav</SoundPath>
+    <SoundPath>Sound\\ClearLine.wav</SoundPath>
+    <SoundPath>Sound\\GameOver.mp3</SoundPath>
+  </Effect>
+</Sound>

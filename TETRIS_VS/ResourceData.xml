@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<Resource>
+  <MenuSystem  Background="1" Sprite="10">
+    <BackgroundData Lines="27" Cols="52" Size="mode con lines=27 cols=52">
+      <TextInfo xPos="0" yPos="0" color="3">□□□□□□□□□□□□□□□□□□□□□□□□□□</TextInfo>
+      <TextInfo xPos="0" yPos="1" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="1" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="2" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="2" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="3" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="3" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="4" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="4" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="5" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="5" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="6" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="6" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="7" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="7" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="8" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="8" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="9" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="9" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="10" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="10" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="11" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="11" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="12" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="12" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="13" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="13" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="14" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="14" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="15" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="15" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="16" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="16" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="17" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="17" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="18" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="18" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="19" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="19" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="20" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="20" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="21" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="21" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="22" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="22" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="23" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="23" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="24" color="3">□</TextInfo>
+      <TextInfo xPos="50" yPos="24" color="3">□</TextInfo>
+      <TextInfo xPos="0" yPos="25" color="15">□</TextInfo>
+      <TextInfo xPos="50" yPos="25" color="15">□</TextInfo>
+      <TextInfo xPos="0" yPos="26" color="3">□□□□□□□□□□□□□□□□□□□□□□□□□□</TextInfo>
+    </BackgroundData>
+    <SpriteData num="0">
+      <TextInfo xPos="2" yPos="2" color="1">■■■</TextInfo>
+      <TextInfo xPos="4" yPos="3" color="1">■</TextInfo>
+      <TextInfo xPos="4" yPos="4" color="1">■</TextInfo>
+      <TextInfo xPos="4" yPos="5" color="1">■</TextInfo>
+      <TextInfo xPos="4" yPos="6" color="1">■</TextInfo>
+    </SpriteData>
+    <SpriteData num="1">
+      <TextInfo xPos="10" yPos="2" color="4">■■■■</TextInfo>
+      <TextInfo xPos="10" yPos="3" color="4">■</TextInfo>
+      <TextInfo xPos="10" yPos="4" color="4">■■■</TextInfo>
+      <TextInfo xPos="10" yPos="5" color="4">■</TextInfo>
+      <TextInfo xPos="10" yPos="6" color="4">■■■■</TextInfo>
+    </SpriteData>
+    <SpriteData num="2">
+      <TextInfo xPos="20" yPos="2" color="6">■■■</TextInfo>
+      <TextInfo xPos="22" yPos="3" color="6">■</TextInfo>
+      <TextInfo xPos="22" yPos="4" color="6">■</TextInfo>
+      <TextInfo xPos="22" yPos="5" color="6">■</TextInfo>
+      <TextInfo xPos="22" yPos="6" color="6">■</TextInfo>
+    </SpriteData>
+    <SpriteData num="3">
+      <TextInfo xPos="28" yPos="2" color="3">■■■</TextInfo>
+      <TextInfo xPos="28" yPos="3" color="3">■</TextInfo>
+      <TextInfo xPos="34" yPos="3" color="3">■</TextInfo>
+      <TextInfo xPos="28" yPos="4" color="3">■■■</TextInfo>
+      <TextInfo xPos="28" yPos="5" color="3">■</TextInfo>
+      <TextInfo xPos="34" yPos="5" color="3">■</TextInfo>
+      <TextInfo xPos="28" yPos="6" color="3">■</TextInfo>
+      <TextInfo xPos="34" yPos="6" color="3">■</TextInfo>
+    </SpriteData>
+    <SpriteData num="4">
+      <TextInfo xPos="38" yPos="2" color="2">■</TextInfo>
+      <TextInfo xPos="38" yPos="3" color="2">■</TextInfo>
+      <TextInfo xPos="38" yPos="4" color="2">■</TextInfo>
+      <TextInfo xPos="38" yPos="5" color="2">■</TextInfo>
+      <TextInfo xPos="38" yPos="6" color="2">■</TextInfo>
+    </SpriteData>
+    <SpriteData num="5">
+      <TextInfo xPos="42" yPos="2" color="5">■■■■</TextInfo>
+      <TextInfo xPos="42" yPos="3" color="5">■</TextInfo>
+      <TextInfo xPos="42" yPos="4" color="5">■■■■</TextInfo>
+      <TextInfo xPos="48" yPos="5" color="5">■</TextInfo>
+      <TextInfo xPos="42" yPos="6" color="5">■■■■</TextInfo>
+    </SpriteData>
+    <SpriteData num="6">
+      <TextInfo xPos="18" yPos="11" color="3">▶</TextInfo>
+      <TextInfo xPos="33" yPos="11" color="3">◀</TextInfo>
+    </SpriteData>
+    <SpriteData num="7">
+      <TextInfo xPos="21" yPos="11" color="13">Single Play</TextInfo>
+    </SpriteData>
+    <SpriteData num="8">
+      <TextInfo xPos="21" yPos="14" color="13">Versus Play</TextInfo>
+    </SpriteData>
+    <SpriteData num="9">
+      <TextInfo xPos="24" yPos="17" color="13">EXIT</TextInfo>
+    </SpriteData>
+  </MenuSystem>
+  <SinglePlaySystem>
+    <BackgroundData Lines="25" Cols="37" Size="mode con lines=25 cols=37">
+      <TextInfo xPos="0" yPos="0" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="0" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="1" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="1" color="10">□</TextInfo>
+      <TextInfo xPos="25" yPos="1" color="14">┏━  next  ━┓</TextInfo>
+      <TextInfo xPos="0" yPos="2" color="12">→</TextInfo>
+      <TextInfo xPos="22" yPos="2" color="12">←</TextInfo>
+      <TextInfo xPos="25" yPos="2" color="11">┃</TextInfo>
+      <TextInfo xPos="34" yPos="2" color="11">┃</TextInfo>
+      <TextInfo xPos="0" yPos="3" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="3" color="10">□</TextInfo>
+      <TextInfo xPos="25" yPos="3" color="14">┃</TextInfo>
+      <TextInfo xPos="34" yPos="3" color="14">┃</TextInfo>
+      <TextInfo xPos="0" yPos="4" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="4" color="10">□</TextInfo>
+      <TextInfo xPos="25" yPos="4" color="11">┃</TextInfo>
+      <TextInfo xPos="34" yPos="4" color="11">┃</TextInfo>
+      <TextInfo xPos="0" yPos="5" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="5" color="10">□</TextInfo>
+      <TextInfo xPos="25" yPos="5" color="14">┃</TextInfo>
+      <TextInfo xPos="34" yPos="5" color="14">┃</TextInfo>
+      <TextInfo xPos="0" yPos="6" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="6" color="10">□</TextInfo>
+      <TextInfo xPos="25" yPos="6" color="11">┗━━━━━━━━┛</TextInfo>
+      <TextInfo xPos="0" yPos="7" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="7" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="8" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="8" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="9" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="9" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="10" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="10" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="11" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="11" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="12" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="12" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="13" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="13" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="14" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="14" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="15" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="15" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="16" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="16" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="17" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="17" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="18" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="18" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="19" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="19" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="20" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="20" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="21" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="21" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="22" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="22" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="23" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="23" color="10">□</TextInfo>
+      <TextInfo xPos="0" yPos="24" color="10">□□□□□□□□□□□□</TextInfo>
+    </BackgroundData>
+  </SinglePlaySystem>
+  <GameOverSystem>
+    <BackgroundData Lines="20" Cols="61" Size="mode con lines=20 cols=61">
+      <TextInfo xPos="4" yPos="1" color="14">■■■■■</TextInfo>
+      <TextInfo xPos="19" yPos="1" color="14">■■■■</TextInfo>
+      <TextInfo xPos="30" yPos="1" color="14">■■</TextInfo>
+      <TextInfo xPos="44" yPos="1" color="14">■■</TextInfo>
+      <TextInfo xPos="49" yPos="1" color="14">■■■■■</TextInfo>
+      <TextInfo xPos="2" yPos="2" color="14">■■</TextInfo>
+      <TextInfo xPos="12" yPos="2" color="14">■■</TextInfo>
+      <TextInfo xPos="17" yPos="2" color="14">■■</TextInfo>
+      <TextInfo xPos="25" yPos="2" color="14">■■</TextInfo>
+      <TextInfo xPos="30" yPos="2" color="14">■■■</TextInfo>
+      <TextInfo xPos="42" yPos="2" color="14">■■■</TextInfo>
+      <TextInfo xPos="49" yPos="2" color="14">■■</TextInfo>
+      <TextInfo xPos="2" yPos="3" color="14">■■</TextInfo>
+      <TextInfo xPos="17" yPos="3" color="14">■■</TextInfo>
+      <TextInfo xPos="25" yPos="3" color="14">■■</TextInfo>
+      <TextInfo xPos="30" yPos="3" color="14">■■■■</TextInfo>
+      <TextInfo xPos="40" yPos="3" color="14">■■■■</TextInfo>
+      <TextInfo xPos="49" yPos="3" color="14">■■</TextInfo>
+      <TextInfo xPos="2" yPos="4" color="14">■■</TextInfo>
+      <TextInfo xPos="8" yPos="4" color="14">■■■■</TextInfo>
+      <TextInfo xPos="17" yPos="4" color="14">■■■■■■</TextInfo>
+      <TextInfo xPos="30" yPos="4" color="14">■■</TextInfo>
+      <TextInfo xPos="36" yPos="4" color="14">■■■</TextInfo>
+      <TextInfo xPos="44" yPos="4" color="14">■■</TextInfo>
+      <TextInfo xPos="49" yPos="4" color="14">■■■■■</TextInfo>
+      <TextInfo xPos="2" yPos="5" color="14">■■</TextInfo>
+      <TextInfo xPos="12" yPos="5" color="14">■■</TextInfo>
+      <TextInfo xPos="17" yPos="5" color="14">■■</TextInfo>
+      <TextInfo xPos="25" yPos="5" color="14">■■</TextInfo>
+      <TextInfo xPos="30" yPos="5" color="14">■■</TextInfo>
+      <TextInfo xPos="38" yPos="5" color="14">■</TextInfo>
+      <TextInfo xPos="44" yPos="5" color="14">■■</TextInfo>
+      <TextInfo xPos="49" yPos="5" color="14">■■</TextInfo>
+      <TextInfo xPos="2" yPos="6" color="14">■■</TextInfo>
+      <TextInfo xPos="12" yPos="6" color="14">■■</TextInfo>
+      <TextInfo xPos="17" yPos="6" color="14">■■</TextInfo>
+      <TextInfo xPos="25" yPos="6" color="14">■■</TextInfo>
+      <TextInfo xPos="30" yPos="6" color="14">■■</TextInfo>
+      <TextInfo xPos="44" yPos="6" color="14">■■</TextInfo>
+      <TextInfo xPos="49" yPos="6" color="14">■■</TextInfo>
+      <TextInfo xPos="4" yPos="7" color="14">■■■■■</TextInfo>
+      <TextInfo xPos="17" yPos="7" color="14">■■</TextInfo>
+      <TextInfo xPos="25" yPos="7" color="14">■■</TextInfo>
+      <TextInfo xPos="30" yPos="7" color="14">■■</TextInfo>
+      <TextInfo xPos="44" yPos="7" color="14">■■</TextInfo>
+      <TextInfo xPos="49" yPos="7" color="14">■■■■■</TextInfo>
+      <TextInfo xPos="6" yPos="10" color="14">■■■■■</TextInfo>
+      <TextInfo xPos="19" yPos="10" color="14">■■</TextInfo>
+      <TextInfo xPos="29" yPos="10" color="14">■■</TextInfo>
+      <TextInfo xPos="34" yPos="10" color="14">■■■■■</TextInfo>
+      <TextInfo xPos="45" yPos="10" color="14">■■■■■</TextInfo>
+      <TextInfo xPos="4" yPos="11" color="14">■■</TextInfo>
+      <TextInfo xPos="14" yPos="11" color="14">■■</TextInfo>
+      <TextInfo xPos="19" yPos="11" color="14">■■</TextInfo>
+      <TextInfo xPos="29" yPos="11" color="14">■■</TextInfo>
+      <TextInfo xPos="34" yPos="11" color="14">■■</TextInfo>
+      <TextInfo xPos="45" yPos="11" color="14">■■</TextInfo>
+      <TextInfo xPos="53" yPos="11" color="14">■■</TextInfo>
+      <TextInfo xPos="4" yPos="12" color="14">■■</TextInfo>
+      <TextInfo xPos="14" yPos="12" color="14">■■</TextInfo>
+      <TextInfo xPos="19" yPos="12" color="14">■■</TextInfo>
+      <TextInfo xPos="29" yPos="12" color="14">■■</TextInfo>
+      <TextInfo xPos="33" yPos="12" color="14">■■</TextInfo>
+      <TextInfo xPos="45" yPos="12" color="14">■■</TextInfo>
+      <TextInfo xPos="53" yPos="12" color="14">■■</TextInfo>
+      <TextInfo xPos="4" yPos="13" color="14">■■</TextInfo>
+      <TextInfo xPos="14" yPos="13" color="14">■■</TextInfo>
+      <TextInfo xPos="21" yPos="13" color="14">■■</TextInfo>
+      <TextInfo xPos="27" yPos="13" color="14">■■</TextInfo>
+      <TextInfo xPos="34" yPos="13" color="14">■■■■■</TextInfo>
+      <TextInfo xPos="45" yPos="13" color="14">■■</TextInfo>
+      <TextInfo xPos="53" yPos="13" color="14">■■</TextInfo>
+      <TextInfo xPos="4" yPos="14" color="14">■■</TextInfo>
+      <TextInfo xPos="14" yPos="14" color="14">■■</TextInfo>
+      <TextInfo xPos="21" yPos="14" color="14">■■</TextInfo>
+      <TextInfo xPos="27" yPos="14" color="14">■■</TextInfo>
+      <TextInfo xPos="34" yPos="14" color="14">■■</TextInfo>
+      <TextInfo xPos="45" yPos="14" color="14">■■■■■</TextInfo>
+      <TextInfo xPos="4" yPos="15" color="14">■■</TextInfo>
+      <TextInfo xPos="14" yPos="15" color="14">■■</TextInfo>
+      <TextInfo xPos="21" yPos="15" color="14">■■</TextInfo>
+      <TextInfo xPos="27" yPos="15" color="14">■■</TextInfo>
+      <TextInfo xPos="34" yPos="15" color="14">■■</TextInfo>
+      <TextInfo xPos="45" yPos="15" color="14">■■</TextInfo>
+      <TextInfo xPos="53" yPos="15" color="14">■■</TextInfo>
+      <TextInfo xPos="6" yPos="16" color="14">■■■■■</TextInfo>
+      <TextInfo xPos="23" yPos="16" color="14">■■■</TextInfo>
+      <TextInfo xPos="34" yPos="16" color="14">■■■■■</TextInfo>
+      <TextInfo xPos="45" yPos="16" color="14">■■</TextInfo>
+      <TextInfo xPos="53" yPos="16" color="14">■■</TextInfo>
+    </BackgroundData>
+    <SpriteData num="0">
+      <TextInfo xPos="21" yPos="18" color="15">◀</TextInfo>
+      <TextInfo xPos="26" yPos="18" color="15">PRESS_ENTER</TextInfo>
+      <TextInfo xPos="40" yPos="18" color="15">▶</TextInfo>
+    </SpriteData>
+  </GameOverSystem>
+  <LobbySystem>
+    <BackgroundData Lines="22" Cols="54" Size="mode con lines=22 cols=54">
+      <TextInfo xPos="0" yPos="0" color="11">■■■■■■■■■■■■■■■■■■■■■■■■■■■</TextInfo>
+      <TextInfo xPos="0" yPos="1" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="1" color="11">┃</TextInfo>
+      <TextInfo xPos="52" yPos="1" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="2" color="11">■</TextInfo>
+      <TextInfo xPos="6" yPos="2" color="11">-ROOM_LIST-</TextInfo>
+      <TextInfo xPos="31" yPos="2" color="11">┃</TextInfo>
+      <TextInfo xPos="52" yPos="2" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="3" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="3" color="11">┃</TextInfo>
+      <TextInfo xPos="35" yPos="3" color="15">◎</TextInfo>
+      <TextInfo xPos="38" yPos="3" color="15">입장</TextInfo>
+      <TextInfo xPos="43" yPos="3" color="15">:</TextInfo>
+      <TextInfo xPos="45" yPos="3" color="15">Enter</TextInfo>
+      <TextInfo xPos="52" yPos="3" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="4" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="4" color="11">┃</TextInfo>
+      <TextInfo xPos="52" yPos="4" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="5" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="5" color="11">┃</TextInfo>
+      <TextInfo xPos="35" yPos="5" color="15">◎</TextInfo>
+      <TextInfo xPos="38" yPos="5" color="15">이동</TextInfo>
+      <TextInfo xPos="43" yPos="5" color="15">:</TextInfo>
+      <TextInfo xPos="45" yPos="5" color="15">↓↑</TextInfo>
+      <TextInfo xPos="52" yPos="5" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="6" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="6" color="11">┃</TextInfo>
+      <TextInfo xPos="52" yPos="6" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="7" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="7" color="11">┃</TextInfo>
+      <TextInfo xPos="35" yPos="7" color="15">◎</TextInfo>
+      <TextInfo xPos="38" yPos="7" color="15">방만들기</TextInfo>
+      <TextInfo xPos="47" yPos="7" color="15">:</TextInfo>
+      <TextInfo xPos="49" yPos="7" color="15">S</TextInfo>
+      <TextInfo xPos="52" yPos="7" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="8" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="8" color="11">┃</TextInfo>
+      <TextInfo xPos="52" yPos="8" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="9" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="9" color="11">┃</TextInfo>
+      <TextInfo xPos="52" yPos="9" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="10" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="10" color="11">┃</TextInfo>
+      <TextInfo xPos="52" yPos="10" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="11" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="11" color="11">┃</TextInfo>
+      <TextInfo xPos="52" yPos="11" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="12" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="12" color="11">┃</TextInfo>
+      <TextInfo xPos="52" yPos="12" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="13" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="13" color="11">┃</TextInfo>
+      <TextInfo xPos="35" yPos="13" color="15">◎</TextInfo>
+      <TextInfo xPos="38" yPos="13" color="15">뒤로가기</TextInfo>
+      <TextInfo xPos="47" yPos="13" color="15">:</TextInfo>
+      <TextInfo xPos="49" yPos="13" color="15">←</TextInfo>
+      <TextInfo xPos="52" yPos="13" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="14" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="14" color="11">┃</TextInfo>
+      <TextInfo xPos="52" yPos="14" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="15" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="15" color="11">┃</TextInfo>
+      <TextInfo xPos="52" yPos="15" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="16" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="16" color="11">┃</TextInfo>
+      <TextInfo xPos="52" yPos="16" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="17" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="17" color="11">┃</TextInfo>
+      <TextInfo xPos="52" yPos="17" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="18" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="18" color="11">┃</TextInfo>
+      <TextInfo xPos="52" yPos="18" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="19" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="19" color="11">┃</TextInfo>
+      <TextInfo xPos="52" yPos="19" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="20" color="11">■</TextInfo>
+      <TextInfo xPos="31" yPos="20" color="11">┃</TextInfo>
+      <TextInfo xPos="52" yPos="20" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="21" color="11">■■■■■■■■■■■■■■■■■■■■■■■■■■■</TextInfo>
+    </BackgroundData>
+    <SpriteData num="0">
+      <TextInfo xPos="4" yPos="4" color="10">▶</TextInfo>
+      <TextInfo xPos="7" yPos="4" color="15">[</TextInfo>
+      <TextInfo xPos="27" yPos="4" color="15">]</TextInfo>
+    </SpriteData>
+    <SpriteData num="1">
+      <TextInfo xPos="12" yPos="8" color="4">□□□□□□□□□□□□□□□□</TextInfo>
+      <TextInfo xPos="12" yPos="9" color="4">□</TextInfo>
+      <TextInfo xPos="42" yPos="9" color="4">□</TextInfo>
+      <TextInfo xPos="12" yPos="10" color="4">□</TextInfo>
+      <TextInfo xPos="22" yPos="10" color="13">해당</TextInfo>
+      <TextInfo xPos="27" yPos="10" color="13">게임룸에</TextInfo>
+      <TextInfo xPos="42" yPos="10" color="4">□</TextInfo>
+      <TextInfo xPos="12" yPos="11" color="4">□</TextInfo>
+      <TextInfo xPos="19" yPos="11" color="13">입장할 수 없습니다.</TextInfo>
+      <TextInfo xPos="26" yPos="11" color="13">수</TextInfo>
+      <TextInfo xPos="29" yPos="11" color="13">없습니다.</TextInfo>
+      <TextInfo xPos="42" yPos="11" color="4">□</TextInfo>
+      <TextInfo xPos="12" yPos="12" color="4">□</TextInfo>
+      <TextInfo xPos="42" yPos="12" color="4">□</TextInfo>
+      <TextInfo xPos="12" yPos="13" color="4">□</TextInfo>
+      <TextInfo xPos="21" yPos="13" color="13">▶Press_Enter◀</TextInfo>
+      <TextInfo xPos="42" yPos="13" color="4">□</TextInfo>
+      <TextInfo xPos="12" yPos="14" color="4">□□□□□□□□□□□□□□□□</TextInfo>
+    </SpriteData>
+    <SpriteData num="2">
+      <TextInfo xPos="9" yPos="4" color="15">NO.</TextInfo>
+      <TextInfo xPos="18" yPos="4" color="10">입장가능</TextInfo>
+    </SpriteData>
+    <SpriteData num="3">
+      <TextInfo xPos="9" yPos="4" color="15">NO.</TextInfo>
+      <TextInfo xPos="18" yPos="4" color="12">게임중</TextInfo>
+    </SpriteData>
+  </LobbySystem>
+  <GameRoomSystem>
+    <BackgroundData Lines="20" Cols="61" Size="mode con lines=15 cols=54">
+      <TextInfo xPos="0" yPos="0" color="11">■■■■■■■■■■■■■■■■■■■■■■■■■■■</TextInfo>
+      <TextInfo xPos="0" yPos="1" color="11">■</TextInfo>
+      <TextInfo xPos="38" yPos="1" color="11">◎뒤로가기:←</TextInfo>
+      <TextInfo xPos="52" yPos="1" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="2" color="11">■</TextInfo>
+      <TextInfo xPos="38" yPos="2" color="11">◎준비:Enter</TextInfo>
+      <TextInfo xPos="6" yPos="2" color="11">NO.</TextInfo>
+      <TextInfo xPos="12" yPos="2" color="11">번방</TextInfo>
+      <TextInfo xPos="52" yPos="2" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="3" color="11">■</TextInfo>
+      <TextInfo xPos="52" yPos="3" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="4" color="11">■</TextInfo>
+      <TextInfo xPos="52" yPos="4" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="5" color="11">■</TextInfo>
+      <TextInfo xPos="17" yPos="5" color="13">□</TextInfo>
+      <TextInfo xPos="25" yPos="5" color="13">□</TextInfo>
+      <TextInfo xPos="29" yPos="5" color="13">□□□□</TextInfo>
+      <TextInfo xPos="52" yPos="5" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="6" color="11">■</TextInfo>
+      <TextInfo xPos="18" yPos="6" color="13">□</TextInfo>
+      <TextInfo xPos="24" yPos="6" color="13">□</TextInfo>
+      <TextInfo xPos="28" yPos="6" color="13">□</TextInfo>
+      <TextInfo xPos="52" yPos="6" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="7" color="11">■</TextInfo>
+      <TextInfo xPos="19" yPos="7" color="13">□</TextInfo>
+      <TextInfo xPos="23" yPos="7" color="13">□</TextInfo>
+      <TextInfo xPos="29" yPos="7" color="13">□□□</TextInfo>
+      <TextInfo xPos="52" yPos="7" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="8" color="11">■</TextInfo>
+      <TextInfo xPos="20" yPos="8" color="13">□</TextInfo>
+      <TextInfo xPos="22" yPos="8" color="13">□</TextInfo>
+      <TextInfo xPos="34" yPos="8" color="13">□</TextInfo>
+      <TextInfo xPos="52" yPos="8" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="9" color="11">■</TextInfo>
+      <TextInfo xPos="21" yPos="9" color="13">□</TextInfo>
+      <TextInfo xPos="28" yPos="9" color="13">□□□</TextInfo>
+      <TextInfo xPos="52" yPos="9" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="10" color="11">■</TextInfo>
+      <TextInfo xPos="52" yPos="10" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="11" color="11">■</TextInfo>
+      <TextInfo xPos="52" yPos="11" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="12" color="11">■</TextInfo>
+      <TextInfo xPos="52" yPos="12" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="13" color="11">■</TextInfo>
+      <TextInfo xPos="52" yPos="13" color="11">■</TextInfo>
+      <TextInfo xPos="0" yPos="14" color="11">■■■■■■■■■■■■■■■■■■■■■■■■■■■</TextInfo>
+    </BackgroundData>
+    <SpriteData num="1">
+      <TextInfo xPos="9" yPos="5" color="14">▲</TextInfo>
+      <TextInfo xPos="7" yPos="6" color="14">◀○▶</TextInfo>
+      <TextInfo xPos="9" yPos="7" color="14">■</TextInfo>
+      <TextInfo xPos="9" yPos="8" color="14">■</TextInfo>
+      <TextInfo xPos="7" yPos="9" color="14">■■■</TextInfo>
+    </SpriteData>
+    <SpriteData num="2">
+      <TextInfo xPos="42" yPos="5" color="14">▽</TextInfo>
+      <TextInfo xPos="40" yPos="6" color="14">▷●◁</TextInfo>
+      <TextInfo xPos="42" yPos="7" color="14">□</TextInfo>
+      <TextInfo xPos="42" yPos="8" color="14">□</TextInfo>
+      <TextInfo xPos="40" yPos="9" color="14">□□□</TextInfo>
+    </SpriteData>
+    <SpriteData num="3">
+      <TextInfo xPos="6" yPos="11" color="10">◈READY</TextInfo>
+    </SpriteData>
+    <SpriteData num="4">
+      <TextInfo xPos="39" yPos="11" color="10">◈READY</TextInfo>
+    </SpriteData>
+    <SpriteData num="5">
+      <TextInfo xPos="25" yPos="12" color="13">START</TextInfo>
+    </SpriteData>
+    <SpriteData num="6">
+      <TextInfo xPos="8" yPos="4" color="3">OWNER</TextInfo>
+    </SpriteData>
+    <SpriteData num="7">
+      <TextInfo xPos="41" yPos="4" color="3">OWNER</TextInfo>
+    </SpriteData>
+  </GameRoomSystem>
+  <VersusPlaySystem>
+    <BackgroundData Lines="25" Cols="63" Size="mode con lines=25 cols=63">
+      <TextInfo xPos="0" yPos="0" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="0" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="0" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="0" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="1" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="1" color="10">□</TextInfo>
+      <TextInfo xPos="25" yPos="1" color="14">┏━  next  ━┓</TextInfo>
+      <TextInfo xPos="39" yPos="1" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="1" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="2" color="12">→</TextInfo>
+      <TextInfo xPos="22" yPos="2" color="12">←</TextInfo>
+      <TextInfo xPos="25" yPos="2" color="11">┃</TextInfo>
+      <TextInfo xPos="34" yPos="2" color="11">┃</TextInfo>
+      <TextInfo xPos="39" yPos="2" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="2" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="3" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="3" color="10">□</TextInfo>
+      <TextInfo xPos="25" yPos="3" color="14">┃</TextInfo>
+      <TextInfo xPos="34" yPos="3" color="14">┃</TextInfo>
+      <TextInfo xPos="39" yPos="3" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="3" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="4" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="4" color="10">□</TextInfo>
+      <TextInfo xPos="25" yPos="4" color="11">┃</TextInfo>
+      <TextInfo xPos="34" yPos="4" color="11">┃</TextInfo>
+      <TextInfo xPos="39" yPos="4" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="4" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="5" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="5" color="10">□</TextInfo>
+      <TextInfo xPos="25" yPos="5" color="14">┃</TextInfo>
+      <TextInfo xPos="34" yPos="5" color="14">┃</TextInfo>
+      <TextInfo xPos="39" yPos="5" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="5" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="6" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="6" color="10">□</TextInfo>
+      <TextInfo xPos="25" yPos="6" color="11">┗━━━━━━━━┛</TextInfo>
+      <TextInfo xPos="39" yPos="6" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="6" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="7" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="7" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="7" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="7" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="8" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="8" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="8" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="8" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="9" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="9" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="9" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="9" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="10" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="10" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="10" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="10" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="11" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="11" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="11" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="11" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="12" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="12" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="12" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="12" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="13" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="13" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="13" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="13" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="14" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="14" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="14" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="14" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="15" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="15" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="15" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="15" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="16" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="16" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="16" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="16" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="17" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="17" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="17" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="17" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="18" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="18" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="18" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="18" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="19" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="19" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="19" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="19" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="20" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="20" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="20" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="20" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="21" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="21" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="21" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="21" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="22" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="22" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="22" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="22" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="23" color="10">□</TextInfo>
+      <TextInfo xPos="22" yPos="23" color="10">□</TextInfo>
+      <TextInfo xPos="39" yPos="23" color="9">□</TextInfo>
+      <TextInfo xPos="61" yPos="23" color="9">□</TextInfo>
+      <TextInfo xPos="0" yPos="24" color="10">□□□□□□□□□□□□</TextInfo>
+      <TextInfo xPos="39" yPos="24" color="9">□□□□□□□□□□□□</TextInfo>
+    </BackgroundData>
+    <SpriteData num="0">
+      <TextInfo xPos="10" yPos="9" color="15">YOU</TextInfo>
+      <TextInfo xPos="8" yPos="10" color="15">★★★★</TextInfo>
+      <TextInfo xPos="10" yPos="11" color="15">WIN</TextInfo>
+      <TextInfo xPos="6" yPos="13" color="10">▷Press_Enter◁</TextInfo>
+    </SpriteData>
+    <SpriteData num="1">
+      <TextInfo xPos="10" yPos="9" color="15">YOU</TextInfo>
+      <TextInfo xPos="8" yPos="10" color="15">★★★★</TextInfo>
+      <TextInfo xPos="10" yPos="11" color="15">LOSE</TextInfo>
+      <TextInfo xPos="6" yPos="13" color="10">▷Press_Enter◁</TextInfo>
+    </SpriteData>
+  </VersusPlaySystem>
+</Resource>
